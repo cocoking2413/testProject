@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZMS.UI.OA.Web.Approve</name>
+    </assembly>
+    <members>
+        <member name="T:ZMS.UI.OA.Web.Approve.Controllers.ManageController">
+            <summary>
+            审批管理
+            </summary>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.Index">
+            <summary>
+            我的申请
+            </summary>
+            <returns>ActionResult</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.MyApprove">
+            <summary>
+            我的审批
+            </summary>
+            <returns>ActionResult</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.Statistics">
+            <summary>
+            统计
+            </summary>
+            <returns>ActionResult</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.Refer">
+            <summary>
+            查阅
+            </summary>
+            <returns>ActionResult</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.Create(ZMS.BLL.OA.IApprove.CreatePostViewModel)">
+            <summary>
+            创建申请
+            </summary>
+            <param name="model">post提交数据</param>
+            <returns>CreateResult</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.Approval(ZMS.BLL.OA.IApprove.AuditPostViewModel)">
+            <summary>
+            审批处理
+            </summary>
+            <param name="model">post提交数据</param>
+            <returns>AuditResult</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.Cancel(System.Int32)">
+            <summary>
+            撤销审批
+            </summary>
+            <param name="id">审批ID</param>
+            <returns>CancelResult</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.Browse(System.Int32)">
+            <summary>
+            浏览
+            </summary>
+            <param name="id">审批ID</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.DiscussLog(System.Int32,System.Boolean)">
+            <summary>
+            评论记录
+            </summary>
+            <param name="id">审批ID</param>
+            <param name="type">是否评论/回复</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.Notice(System.Int32,System.String)">
+            <summary>
+            催办
+            </summary>
+            <param name="id">审批ID</param>
+            <param name="notices">消息类型列表</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.Delete(System.Int32)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">审批ID</param>
+            <returns>DeleteResult</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.ApproveSingle(System.Int32)">
+            <summary>
+            获取单个审批内容
+            </summary>
+            <returns>0</returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.ApproveList(ZMS.BLL.OA.IApprove.SearchRequest)">
+            <summary>
+            我的申请列表
+            </summary>
+            <param name="request">查询分页请求类</param>
+            <returns>List/<oa_ApproveInfo/></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.MyApproveList(ZMS.BLL.OA.IApprove.SearchRequest)">
+            <summary>
+            我的审批列表
+            </summary>
+            <param name="request">查询分页请求类</param>
+            <returns>List/<oa_ApproveInfo/></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.MyReferList(ZMS.BLL.OA.IApprove.SearchRequest)">
+            <summary>
+            查阅列表
+            </summary>
+            <param name="request">查询分页请求类</param>
+            <returns>List/<oa_ApproveInfo/></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.UdpList(System.Int32)">
+             <summary>
+            获取当前用户所在公司部门职位列表
+             </summary>
+             <param name="uid">用户ID</param>
+             <returns></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.DepartList(System.Int32)">
+            <summary>
+            获取部门列表
+            </summary>
+            <param name="uid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.CanCancel(System.Int32,System.Int32)">
+            <summary>
+            审批是否可撤销
+            </summary>
+            <param name="id">审批ID</param>
+            <param name="uid">当前用户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.UserInfo(System.Int32)">
+            <summary>
+            获取用户审批汇总信息
+            </summary>
+            <param name="uid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.ApproveStatistic(System.Int32,ZMS.BLL.OA.IApprove.ApproveTypeStatisticParam)">
+            <summary>
+            获取审批统计信息1
+            </summary>
+            <param name="uid"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.ApproveList2(ZMS.BLL.OA.IApprove.ApproveParam)">
+            <summary>
+            分表单获取列表+过滤
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.GetAttendanceNeedList(System.Int32,ZMS.BLL.OA.IApprove.AttendanceCheckParam)">
+            <summary>
+            考勤用筛选列表
+            </summary>
+            <param name="uid">用户id</param>
+            <param name="parameter">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.GetAttendanceNeedList2(ZMS.BLL.OA.IApprove.AttendanceCheckParam,System.Int32)">
+            <summary>
+            考勤用筛选列表2
+            </summary>
+            <param name="uid">0</param>
+            <param name="parameter">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.GetAttendanceStatistic(ZMS.BLL.OA.IApprove.AttendanceCheckStatisticParam)">
+            <summary>
+            考勤用审批统计数据列表
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZMS.UI.OA.Web.Approve.Controllers.ManageController.SendMsg(System.String,System.Collections.Generic.List{System.Int32},System.Int32,System.String,ZMS.BLL.OA.IApprove.OptionType)">
+            <summary>
+            消息提醒（touid需另行校验，默认为同公司可用用户）
+            </summary>
+            <param name="notices">消息类型列表</param>
+            <param name="touids">提醒用户列表</param>
+            <param name="approveID">审批ID</param>
+            <param name="title">审批标题</param>
+            <param name="type">操作类型</param>
+            <returns>SendMsgResult：发送消息返回枚举</returns>
+        </member>
+        <member name="T:ZMS.UI.OA.Web.Approve.Controllers.SendMsgResult">
+            <summary>
+            发送消息返回枚举
+            </summary>
+        </member>
+        <member name="F:ZMS.UI.OA.Web.Approve.Controllers.SendMsgResult.Error">
+            <summary>
+            提醒方式有误
+            </summary>
+        </member>
+        <member name="F:ZMS.UI.OA.Web.Approve.Controllers.SendMsgResult.AllSuccess">
+            <summary>
+            全部发送成功
+            </summary>
+        </member>
+        <member name="F:ZMS.UI.OA.Web.Approve.Controllers.SendMsgResult.HasError">
+            <summary>
+            有发送失败的
+            </summary>
+        </member>
+    </members>
+</doc>

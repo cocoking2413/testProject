@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Lottery.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="LotteryStoreContainer">
+          <EntitySet Name="Base_UserScore" EntityType="Lottery.Store.Base_UserScore" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Base_UserScoreRecord" EntityType="Lottery.Store.Base_UserScoreRecord" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Base_UserScoreSource" EntityType="Lottery.Store.Base_UserScoreSource" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Shop_GoodCategory" EntityType="Lottery.Store.Shop_GoodCategory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Shop_LuckAward" EntityType="Lottery.Store.Shop_LuckAward" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Shop_LuckAwardStage" EntityType="Lottery.Store.Shop_LuckAwardStage" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Shop_LuckDrawInfo" EntityType="Lottery.Store.Shop_LuckDrawInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Shop_LuckDrawRecord" EntityType="Lottery.Store.Shop_LuckDrawRecord" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Shop_OrderInfo" EntityType="Lottery.Store.Shop_OrderInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Shop_OrderProduct" EntityType="Lottery.Store.Shop_OrderProduct" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Shop_ProductInfo" EntityType="Lottery.Store.Shop_ProductInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Shop_ShipInfo" EntityType="Lottery.Store.Shop_ShipInfo" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Base_UserScore">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="UserScore" Type="numeric" Nullable="false" Precision="9" Scale="1" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="ZMSCompanyID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Base_UserScoreRecord">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="UserScore" Type="numeric" Nullable="false" Precision="9" Scale="1" />
+          <Property Name="Source" Type="int" Nullable="false" />
+          <Property Name="OperatorUser" Type="int" Nullable="false" />
+          <Property Name="SourceReason" Type="nvarchar" MaxLength="3000" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="ZMSCompanyID" Type="int" Nullable="false" />
+          <Property Name="Balance" Type="numeric" Scale="2" />
+          <Property Name="RelatedID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Base_UserScoreSource">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ScoreSource" Type="int" Nullable="false" />
+          <Property Name="ScoreSourcekeyName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ScoreSourceName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="UserScore" Type="numeric" Nullable="false" Precision="9" Scale="1" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="ZMSCompanyID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shop_GoodCategory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ParentCateCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CateCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CateName" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shop_LuckAward">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LuckID" Type="int" Nullable="false" />
+          <Property Name="CateCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductName" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="ProductCount" Type="int" Nullable="false" />
+          <Property Name="StockBalance" Type="int" Nullable="false" />
+          <Property Name="isEmpty" Type="int" Nullable="false" />
+          <Property Name="LuckRate" Type="decimal" Nullable="false" Scale="10" />
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="AwardPicture" Type="nvarchar" MaxLength="300" />
+          <Property Name="UpdateTimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shop_LuckAwardStage">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LuckID" Type="int" Nullable="false" />
+          <Property Name="AwardID" Type="int" Nullable="false" />
+          <Property Name="StageTime" Type="datetime" Nullable="false" />
+          <Property Name="StageCount" Type="int" Nullable="false" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shop_LuckDrawInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LuckTitle" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="LuckSummery" Type="nvarchar" MaxLength="2000" />
+          <Property Name="UsedScore" Type="int" Nullable="false" />
+          <Property Name="MaxTry" Type="int" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" Nullable="false" />
+          <Property Name="EndTime" Type="datetime" Nullable="false" />
+          <Property Name="State" Type="int" Nullable="false" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shop_LuckDrawRecord">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LuckID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="LuckDateTime" Type="datetime" Nullable="false" />
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="isLuck" Type="int" Nullable="false" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shop_OrderInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OrderNO" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="OrderType" Type="int" Nullable="false" />
+          <Property Name="LuckID" Type="int" />
+          <Property Name="ProductCount" Type="int" />
+          <Property Name="Amount" Type="decimal" Precision="9" Scale="2" />
+          <Property Name="OrderState" Type="int" />
+          <Property Name="ShipID" Type="int" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shop_OrderProduct">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OrderNO" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductID" Type="int" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="500" />
+          <Property Name="Price" Type="decimal" Precision="9" Scale="2" />
+          <Property Name="Amount" Type="int" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shop_ProductInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CateCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="500" />
+          <Property Name="ProductImage" Type="nvarchar" MaxLength="200" />
+          <Property Name="ProductDetail" Type="nvarchar(max)" />
+          <Property Name="ViewTimes" Type="decimal" />
+          <Property Name="Sort" Type="decimal" />
+          <Property Name="IsDisplay" Type="int" />
+          <Property Name="Unit" Type="nvarchar" MaxLength="50" />
+          <Property Name="Price" Type="decimal" Precision="9" Scale="2" />
+          <Property Name="Brand" Type="nvarchar" MaxLength="50" />
+          <Property Name="Model" Type="nvarchar" MaxLength="50" />
+          <Property Name="Weight" Type="nvarchar" MaxLength="50" />
+          <Property Name="Material" Type="nvarchar" MaxLength="50" />
+          <Property Name="Size" Type="nvarchar" MaxLength="50" />
+          <Property Name="Summery" Type="nvarchar(max)" />
+          <Property Name="Color" Type="nvarchar" MaxLength="100" />
+          <Property Name="StockBalance" Type="decimal" Precision="9" Scale="2" />
+          <Property Name="CreateUser" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shop_ShipInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="RegionCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="LinkMan" Type="nvarchar" MaxLength="50" />
+          <Property Name="LinkManTel" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+          <Property Name="ZipCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="CreateUser" Type="int" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Lottery" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="LotteryEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Base_UserScore" EntityType="Lottery.Base_UserScore" />
+          <EntitySet Name="Base_UserScoreRecord" EntityType="Lottery.Base_UserScoreRecord" />
+          <EntitySet Name="Base_UserScoreSource" EntityType="Lottery.Base_UserScoreSource" />
+          <EntitySet Name="Shop_GoodCategory" EntityType="Lottery.Shop_GoodCategory" />
+          <EntitySet Name="Shop_LuckAward" EntityType="Lottery.Shop_LuckAward" />
+          <EntitySet Name="Shop_LuckAwardStage" EntityType="Lottery.Shop_LuckAwardStage" />
+          <EntitySet Name="Shop_LuckDrawInfo" EntityType="Lottery.Shop_LuckDrawInfo" />
+          <EntitySet Name="Shop_LuckDrawRecord" EntityType="Lottery.Shop_LuckDrawRecord" />
+          <EntitySet Name="Shop_OrderInfo" EntityType="Lottery.Shop_OrderInfo" />
+          <EntitySet Name="Shop_OrderProduct" EntityType="Lottery.Shop_OrderProduct" />
+          <EntitySet Name="Shop_ProductInfo" EntityType="Lottery.Shop_ProductInfo" />
+          <EntitySet Name="Shop_ShipInfo" EntityType="Lottery.Shop_ShipInfo" />
+        </EntityContainer>
+        <EntityType Name="Base_UserScore">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="UserScore" Type="Decimal" Nullable="false" Precision="9" Scale="1" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ZMSCompanyID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Base_UserScoreRecord">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="UserScore" Type="Decimal" Nullable="false" Precision="9" Scale="1" />
+          <Property Name="Source" Type="Int32" Nullable="false" />
+          <Property Name="OperatorUser" Type="Int32" Nullable="false" />
+          <Property Name="SourceReason" Type="String" MaxLength="3000" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ZMSCompanyID" Type="Int32" Nullable="false" />
+          <Property Name="Balance" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="RelatedID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Base_UserScoreSource">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ScoreSource" Type="Int32" Nullable="false" />
+          <Property Name="ScoreSourcekeyName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ScoreSourceName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="UserScore" Type="Decimal" Nullable="false" Precision="9" Scale="1" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ZMSCompanyID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shop_GoodCategory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ParentCateCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CateCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CateName" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Shop_LuckAward">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="LuckID" Type="Int32" Nullable="false" />
+          <Property Name="CateCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProductName" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="ProductCount" Type="Int32" Nullable="false" />
+          <Property Name="StockBalance" Type="Int32" Nullable="false" />
+          <Property Name="isEmpty" Type="Int32" Nullable="false" />
+          <Property Name="LuckRate" Type="Decimal" Nullable="false" Precision="18" Scale="10" />
+          <Property Name="ProductID" Type="Int32" Nullable="false" />
+          <Property Name="AwardPicture" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="UpdateTimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Shop_LuckAwardStage">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="LuckID" Type="Int32" Nullable="false" />
+          <Property Name="AwardID" Type="Int32" Nullable="false" />
+          <Property Name="StageTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="StageCount" Type="Int32" Nullable="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Shop_LuckDrawInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="LuckTitle" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="LuckSummery" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+          <Property Name="UsedScore" Type="Int32" Nullable="false" />
+          <Property Name="MaxTry" Type="Int32" Nullable="false" />
+          <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EndTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="State" Type="Int32" Nullable="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Shop_LuckDrawRecord">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="LuckID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="LuckDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ProductID" Type="Int32" Nullable="false" />
+          <Property Name="isLuck" Type="Int32" Nullable="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Shop_OrderInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderNO" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="OrderType" Type="Int32" Nullable="false" />
+          <Property Name="LuckID" Type="Int32" />
+          <Property Name="ProductCount" Type="Int32" />
+          <Property Name="Amount" Type="Decimal" Precision="9" Scale="2" />
+          <Property Name="OrderState" Type="Int32" />
+          <Property Name="ShipID" Type="Int32" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Shop_OrderProduct">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderNO" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProductID" Type="Int32" />
+          <Property Name="ProductName" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Price" Type="Decimal" Precision="9" Scale="2" />
+          <Property Name="Amount" Type="Int32" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Shop_ProductInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="CateCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProductName" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="ProductImage" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ProductDetail" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ViewTimes" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Sort" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IsDisplay" Type="Int32" />
+          <Property Name="Unit" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Price" Type="Decimal" Precision="9" Scale="2" />
+          <Property Name="Brand" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Model" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Weight" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Material" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Size" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Summery" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Color" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="StockBalance" Type="Decimal" Precision="9" Scale="2" />
+          <Property Name="CreateUser" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Shop_ShipInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="RegionCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="LinkMan" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LinkManTel" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Mobile" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ZipCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreateUser" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LotteryStoreContainer" CdmEntityContainer="LotteryEntities">
+          <EntitySetMapping Name="Base_UserScore">
+            <EntityTypeMapping TypeName="Lottery.Base_UserScore">
+              <MappingFragment StoreEntitySet="Base_UserScore">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserScore" ColumnName="UserScore" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="ZMSCompanyID" ColumnName="ZMSCompanyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Base_UserScoreRecord">
+            <EntityTypeMapping TypeName="Lottery.Base_UserScoreRecord">
+              <MappingFragment StoreEntitySet="Base_UserScoreRecord">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserScore" ColumnName="UserScore" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="OperatorUser" ColumnName="OperatorUser" />
+                <ScalarProperty Name="SourceReason" ColumnName="SourceReason" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="ZMSCompanyID" ColumnName="ZMSCompanyID" />
+                <ScalarProperty Name="Balance" ColumnName="Balance" />
+                <ScalarProperty Name="RelatedID" ColumnName="RelatedID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Base_UserScoreSource">
+            <EntityTypeMapping TypeName="Lottery.Base_UserScoreSource">
+              <MappingFragment StoreEntitySet="Base_UserScoreSource">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ScoreSource" ColumnName="ScoreSource" />
+                <ScalarProperty Name="ScoreSourcekeyName" ColumnName="ScoreSourcekeyName" />
+                <ScalarProperty Name="ScoreSourceName" ColumnName="ScoreSourceName" />
+                <ScalarProperty Name="UserScore" ColumnName="UserScore" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="ZMSCompanyID" ColumnName="ZMSCompanyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shop_GoodCategory">
+            <EntityTypeMapping TypeName="Lottery.Shop_GoodCategory">
+              <MappingFragment StoreEntitySet="Shop_GoodCategory">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ParentCateCode" ColumnName="ParentCateCode" />
+                <ScalarProperty Name="CateCode" ColumnName="CateCode" />
+                <ScalarProperty Name="CateName" ColumnName="CateName" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shop_LuckAward">
+            <EntityTypeMapping TypeName="Lottery.Shop_LuckAward">
+              <MappingFragment StoreEntitySet="Shop_LuckAward">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LuckID" ColumnName="LuckID" />
+                <ScalarProperty Name="CateCode" ColumnName="CateCode" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductCount" ColumnName="ProductCount" />
+                <ScalarProperty Name="StockBalance" ColumnName="StockBalance" />
+                <ScalarProperty Name="isEmpty" ColumnName="isEmpty" />
+                <ScalarProperty Name="LuckRate" ColumnName="LuckRate" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="AwardPicture" ColumnName="AwardPicture" />
+                <ScalarProperty Name="UpdateTimeStamp" ColumnName="UpdateTimeStamp" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shop_LuckAwardStage">
+            <EntityTypeMapping TypeName="Lottery.Shop_LuckAwardStage">
+              <MappingFragment StoreEntitySet="Shop_LuckAwardStage">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LuckID" ColumnName="LuckID" />
+                <ScalarProperty Name="AwardID" ColumnName="AwardID" />
+                <ScalarProperty Name="StageTime" ColumnName="StageTime" />
+                <ScalarProperty Name="StageCount" ColumnName="StageCount" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shop_LuckDrawInfo">
+            <EntityTypeMapping TypeName="Lottery.Shop_LuckDrawInfo">
+              <MappingFragment StoreEntitySet="Shop_LuckDrawInfo">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LuckTitle" ColumnName="LuckTitle" />
+                <ScalarProperty Name="LuckSummery" ColumnName="LuckSummery" />
+                <ScalarProperty Name="UsedScore" ColumnName="UsedScore" />
+                <ScalarProperty Name="MaxTry" ColumnName="MaxTry" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shop_LuckDrawRecord">
+            <EntityTypeMapping TypeName="Lottery.Shop_LuckDrawRecord">
+              <MappingFragment StoreEntitySet="Shop_LuckDrawRecord">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LuckID" ColumnName="LuckID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="LuckDateTime" ColumnName="LuckDateTime" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="isLuck" ColumnName="isLuck" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shop_OrderInfo">
+            <EntityTypeMapping TypeName="Lottery.Shop_OrderInfo">
+              <MappingFragment StoreEntitySet="Shop_OrderInfo">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="OrderNO" ColumnName="OrderNO" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="OrderType" ColumnName="OrderType" />
+                <ScalarProperty Name="LuckID" ColumnName="LuckID" />
+                <ScalarProperty Name="ProductCount" ColumnName="ProductCount" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="OrderState" ColumnName="OrderState" />
+                <ScalarProperty Name="ShipID" ColumnName="ShipID" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shop_OrderProduct">
+            <EntityTypeMapping TypeName="Lottery.Shop_OrderProduct">
+              <MappingFragment StoreEntitySet="Shop_OrderProduct">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="OrderNO" ColumnName="OrderNO" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shop_ProductInfo">
+            <EntityTypeMapping TypeName="Lottery.Shop_ProductInfo">
+              <MappingFragment StoreEntitySet="Shop_ProductInfo">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CateCode" ColumnName="CateCode" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+                <ScalarProperty Name="ProductDetail" ColumnName="ProductDetail" />
+                <ScalarProperty Name="ViewTimes" ColumnName="ViewTimes" />
+                <ScalarProperty Name="Sort" ColumnName="Sort" />
+                <ScalarProperty Name="IsDisplay" ColumnName="IsDisplay" />
+                <ScalarProperty Name="Unit" ColumnName="Unit" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Material" ColumnName="Material" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Summery" ColumnName="Summery" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="StockBalance" ColumnName="StockBalance" />
+                <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shop_ShipInfo">
+            <EntityTypeMapping TypeName="Lottery.Shop_ShipInfo">
+              <MappingFragment StoreEntitySet="Shop_ShipInfo">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="RegionCode" ColumnName="RegionCode" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="LinkMan" ColumnName="LinkMan" />
+                <ScalarProperty Name="LinkManTel" ColumnName="LinkManTel" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

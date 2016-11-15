@@ -1,0 +1,3201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<reflection>
+  <assemblies>
+    <assembly name="ZMS.BLL.OA.IApprove">
+      <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyFileVersionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>1.0.0.0</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </assembly>
+  </assemblies>
+  <apis>
+    <api id="N:ZMS.BLL.OA.IApprove">
+      <apidata name="ZMS.BLL.OA.IApprove" group="namespace" />
+      <elements>
+        <element api="T:ZMS.BLL.OA.IApprove.IApprove" />
+        <element api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" />
+        <element api="T:ZMS.BLL.OA.IApprove.CreateHelper" />
+        <element api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" />
+        <element api="T:ZMS.BLL.OA.IApprove.FromBase" />
+        <element api="T:ZMS.BLL.OA.IApprove.LeaveForm" />
+        <element api="T:ZMS.BLL.OA.IApprove.GoodsApplyForm" />
+        <element api="T:ZMS.BLL.OA.IApprove.GoodsApply" />
+        <element api="T:ZMS.BLL.OA.IApprove.GoodsApplyTotal" />
+        <element api="T:ZMS.BLL.OA.IApprove.OptionLog" />
+        <element api="T:ZMS.BLL.OA.IApprove.AuditPostViewModel" />
+        <element api="T:ZMS.BLL.OA.IApprove.SearchRequest" />
+        <element api="T:ZMS.BLL.OA.IApprove.CreateResult" />
+        <element api="T:ZMS.BLL.OA.IApprove.AuditResult" />
+        <element api="T:ZMS.BLL.OA.IApprove.CancelResult" />
+        <element api="T:ZMS.BLL.OA.IApprove.DeleteResult" />
+        <element api="T:ZMS.BLL.OA.IApprove.LeavelType" />
+        <element api="T:ZMS.BLL.OA.IApprove.ApproveState" />
+        <element api="T:ZMS.BLL.OA.IApprove.OptionType" />
+        <element api="T:ZMS.BLL.OA.IApprove.SearchTabType" />
+      </elements>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.ApproveState">
+      <apidata name="ApproveState" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:ZMS.BLL.OA.IApprove.ApproveState.ToApprove" />
+        <element api="F:ZMS.BLL.OA.IApprove.ApproveState.Aggree" />
+        <element api="F:ZMS.BLL.OA.IApprove.ApproveState.Regict" />
+        <element api="F:ZMS.BLL.OA.IApprove.ApproveState.Stop" />
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.ApproveState.Aggree">
+      <apidata name="Aggree" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.ApproveState" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.ApproveState" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.ApproveState.Regict">
+      <apidata name="Regict" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.ApproveState" ref="false" />
+      </returns>
+      <value>2</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.ApproveState" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.ApproveState.Stop">
+      <apidata name="Stop" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.ApproveState" ref="false" />
+      </returns>
+      <value>3</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.ApproveState" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.ApproveState.ToApprove">
+      <apidata name="ToApprove" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.ApproveState" ref="false" />
+      </returns>
+      <value>0</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.ApproveState" ref="false" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.AuditPostViewModel">
+      <apidata name="AuditPostViewModel" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:ZMS.BLL.OA.IApprove.AuditPostViewModel.#ctor" />
+        <element api="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.content" />
+        <element api="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.option" />
+        <element api="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.appID" />
+        <element api="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.uid" />
+        <element api="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.notices" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.AuditPostViewModel.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditPostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.appID">
+      <apidata name="appID" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_appID" />
+      <setter name="set_appID" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditPostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.content">
+      <apidata name="content" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_content" />
+      <setter name="set_content" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditPostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.notices">
+      <apidata name="notices" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_notices" />
+      <setter name="set_notices" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditPostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.option">
+      <apidata name="option" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_option" />
+      <setter name="set_option" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditPostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.uid">
+      <apidata name="uid" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_uid" />
+      <setter name="set_uid" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditPostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.AuditResult">
+      <apidata name="AuditResult" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:ZMS.BLL.OA.IApprove.AuditResult.SystemError" />
+        <element api="F:ZMS.BLL.OA.IApprove.AuditResult.DataCheck" />
+        <element api="F:ZMS.BLL.OA.IApprove.AuditResult.Success" />
+        <element api="F:ZMS.BLL.OA.IApprove.AuditResult.DataSave" />
+        <element api="F:ZMS.BLL.OA.IApprove.AuditResult.WriteLogError" />
+        <element api="F:ZMS.BLL.OA.IApprove.AuditResult.FlowError" />
+        <element api="F:ZMS.BLL.OA.IApprove.AuditResult.MsgSend" />
+        <element api="F:ZMS.BLL.OA.IApprove.AuditResult.ApproveUser" />
+        <element api="F:ZMS.BLL.OA.IApprove.AuditResult.ParamError" />
+        <element api="F:ZMS.BLL.OA.IApprove.AuditResult.AppCancel" />
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.AuditResult.AppCancel">
+      <apidata name="AppCancel" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </returns>
+      <value>8</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.AuditResult.ApproveUser">
+      <apidata name="ApproveUser" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </returns>
+      <value>6</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.AuditResult.DataCheck">
+      <apidata name="DataCheck" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </returns>
+      <value>0</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.AuditResult.DataSave">
+      <apidata name="DataSave" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </returns>
+      <value>2</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.AuditResult.FlowError">
+      <apidata name="FlowError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </returns>
+      <value>4</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.AuditResult.MsgSend">
+      <apidata name="MsgSend" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </returns>
+      <value>5</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.AuditResult.ParamError">
+      <apidata name="ParamError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </returns>
+      <value>7</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.AuditResult.Success">
+      <apidata name="Success" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.AuditResult.SystemError">
+      <apidata name="SystemError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </returns>
+      <value>-1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.AuditResult.WriteLogError">
+      <apidata name="WriteLogError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </returns>
+      <value>3</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.CancelResult">
+      <apidata name="CancelResult" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:ZMS.BLL.OA.IApprove.CancelResult.SystemError" />
+        <element api="F:ZMS.BLL.OA.IApprove.CancelResult.ParamError" />
+        <element api="F:ZMS.BLL.OA.IApprove.CancelResult.Success" />
+        <element api="F:ZMS.BLL.OA.IApprove.CancelResult.DataSave" />
+        <element api="F:ZMS.BLL.OA.IApprove.CancelResult.WriteLogError" />
+        <element api="F:ZMS.BLL.OA.IApprove.CancelResult.FlowError" />
+        <element api="F:ZMS.BLL.OA.IApprove.CancelResult.MsgSend" />
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CancelResult.DataSave">
+      <apidata name="DataSave" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </returns>
+      <value>2</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CancelResult.FlowError">
+      <apidata name="FlowError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </returns>
+      <value>4</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CancelResult.MsgSend">
+      <apidata name="MsgSend" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </returns>
+      <value>5</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CancelResult.ParamError">
+      <apidata name="ParamError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </returns>
+      <value>0</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CancelResult.Success">
+      <apidata name="Success" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CancelResult.SystemError">
+      <apidata name="SystemError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </returns>
+      <value>-1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CancelResult.WriteLogError">
+      <apidata name="WriteLogError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </returns>
+      <value>3</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.CreateHelper">
+      <apidata name="CreateHelper" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:ZMS.BLL.OA.IApprove.CreateHelper.ToTurnAndValidate(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.BLL.OA.IApprove.TurnAndValidResult@)" />
+        <element api="M:ZMS.BLL.OA.IApprove.CreateHelper.Turn(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.OA.Model.oa_ApproveInfo@)" />
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.CreateHelper.ToTurnAndValidate(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.BLL.OA.IApprove.TurnAndValidResult@)">
+      <apidata name="ToTurnAndValidate" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="model">
+          <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+        </parameter>
+        <parameter name="result">
+          <referenceTo>
+            <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+          </referenceTo>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:ZMS.OA.Model.oa_ApproveInfo" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateHelper" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.CreateHelper.Turn(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.OA.Model.oa_ApproveInfo@)">
+      <apidata name="Turn" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="model">
+          <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+        </parameter>
+        <parameter name="approve">
+          <referenceTo>
+            <type api="T:ZMS.OA.Model.oa_ApproveInfo" ref="true" />
+          </referenceTo>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Boolean" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateHelper" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.CreatePostViewModel">
+      <apidata name="CreatePostViewModel" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:ZMS.BLL.OA.IApprove.CreatePostViewModel.#ctor" />
+        <element api="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Type" />
+        <element api="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.DepartmentID" />
+        <element api="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.DepartmentName" />
+        <element api="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.PositionID" />
+        <element api="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.PositionName" />
+        <element api="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Title" />
+        <element api="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.AttachmentID" />
+        <element api="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.JsonContent" />
+        <element api="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.ToUid" />
+        <element api="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.ToUserName" />
+        <element api="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Notices" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:ZMS.BLL.OA.IApprove.CreateHelper.ToTurnAndValidate(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.BLL.OA.IApprove.TurnAndValidResult@)" source="extension">
+          <apidata name="ToTurnAndValidate" group="member" subgroup="method" subsubgroup="extension" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="result">
+              <referenceTo>
+                <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+              </referenceTo>
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:ZMS.OA.Model.oa_ApproveInfo" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:ZMS.BLL.OA.IApprove" />
+            <type api="T:ZMS.BLL.OA.IApprove.CreateHelper" ref="true" />
+          </containers>
+        </element>
+        <element api="M:ZMS.BLL.OA.IApprove.CreateHelper.Turn(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.OA.Model.oa_ApproveInfo@)" source="extension">
+          <apidata name="Turn" group="member" subgroup="method" subsubgroup="extension" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="approve">
+              <referenceTo>
+                <type api="T:ZMS.OA.Model.oa_ApproveInfo" ref="true" />
+              </referenceTo>
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:ZMS.BLL.OA.IApprove" />
+            <type api="T:ZMS.BLL.OA.IApprove.CreateHelper" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.CreatePostViewModel.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.AttachmentID">
+      <apidata name="AttachmentID" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_AttachmentID" />
+      <setter name="set_AttachmentID" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.DepartmentID">
+      <apidata name="DepartmentID" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_DepartmentID" />
+      <setter name="set_DepartmentID" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.DepartmentName">
+      <apidata name="DepartmentName" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_DepartmentName" />
+      <setter name="set_DepartmentName" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.JsonContent">
+      <apidata name="JsonContent" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_JsonContent" />
+      <setter name="set_JsonContent" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Notices">
+      <apidata name="Notices" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Notices" />
+      <setter name="set_Notices" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.PositionID">
+      <apidata name="PositionID" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_PositionID" />
+      <setter name="set_PositionID" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.PositionName">
+      <apidata name="PositionName" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_PositionName" />
+      <setter name="set_PositionName" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Title">
+      <apidata name="Title" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Title" />
+      <setter name="set_Title" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.ToUid">
+      <apidata name="ToUid" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_ToUid" />
+      <setter name="set_ToUid" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.ToUserName">
+      <apidata name="ToUserName" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_ToUserName" />
+      <setter name="set_ToUserName" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Type">
+      <apidata name="Type" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Type" />
+      <setter name="set_Type" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.CreateResult">
+      <apidata name="CreateResult" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.SystemError" />
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.DataCheck" />
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.Success" />
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.DataSave" />
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.WriteLogError" />
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.FlowError" />
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.MsgSend" />
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.TurnError" />
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.ValidError" />
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.TypeError" />
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.ApproveUser" />
+        <element api="F:ZMS.BLL.OA.IApprove.CreateResult.DepartError" />
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.ApproveUser">
+      <apidata name="ApproveUser" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>9</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.DataCheck">
+      <apidata name="DataCheck" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>0</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.DataSave">
+      <apidata name="DataSave" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>2</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.DepartError">
+      <apidata name="DepartError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>10</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.FlowError">
+      <apidata name="FlowError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>4</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.MsgSend">
+      <apidata name="MsgSend" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>5</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.Success">
+      <apidata name="Success" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.SystemError">
+      <apidata name="SystemError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>-1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.TurnError">
+      <apidata name="TurnError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>6</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.TypeError">
+      <apidata name="TypeError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>8</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.ValidError">
+      <apidata name="ValidError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>7</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.CreateResult.WriteLogError">
+      <apidata name="WriteLogError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </returns>
+      <value>3</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.DeleteResult">
+      <apidata name="DeleteResult" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:ZMS.BLL.OA.IApprove.DeleteResult.DataError" />
+        <element api="F:ZMS.BLL.OA.IApprove.DeleteResult.SystemError" />
+        <element api="F:ZMS.BLL.OA.IApprove.DeleteResult.Success" />
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.DeleteResult.DataError">
+      <apidata name="DataError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.DeleteResult" ref="false" />
+      </returns>
+      <value>-1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.DeleteResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.DeleteResult.Success">
+      <apidata name="Success" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.DeleteResult" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.DeleteResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.DeleteResult.SystemError">
+      <apidata name="SystemError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.DeleteResult" ref="false" />
+      </returns>
+      <value>0</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.DeleteResult" ref="false" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.FromBase">
+      <apidata name="FromBase" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+        <descendents>
+          <type api="T:ZMS.BLL.OA.IApprove.LeaveForm" ref="true" />
+          <type api="T:ZMS.BLL.OA.IApprove.GoodsApplyForm" ref="true" />
+        </descendents>
+      </family>
+      <implements>
+        <type api="T:System.ComponentModel.DataAnnotations.IValidatableObject" ref="true" />
+      </implements>
+      <elements>
+        <element api="M:ZMS.BLL.OA.IApprove.FromBase.Validate(System.ComponentModel.DataAnnotations.ValidationContext)" />
+        <element api="M:ZMS.BLL.OA.IApprove.FromBase.IsValid" />
+        <element api="M:ZMS.BLL.OA.IApprove.FromBase.#ctor" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.FromBase.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.FromBase" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.FromBase.IsValid">
+      <apidata name="IsValid" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="true" />
+      <returns>
+        <type api="T:System.Boolean" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.FromBase" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.FromBase.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <apidata name="Validate" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="true" />
+      <parameters>
+        <parameter name="validationContext">
+          <type api="T:System.ComponentModel.DataAnnotations.ValidationContext" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+          <specialization>
+            <type api="T:System.ComponentModel.DataAnnotations.ValidationResult" ref="true" />
+          </specialization>
+        </type>
+      </returns>
+      <implements>
+        <member api="M:System.ComponentModel.DataAnnotations.IValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+          <type api="T:System.ComponentModel.DataAnnotations.IValidatableObject" ref="true" />
+        </member>
+      </implements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.FromBase" ref="true" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.GoodsApply">
+      <apidata name="GoodsApply" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="true" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:ZMS.BLL.OA.IApprove.GoodsApply.#ctor" />
+        <element api="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsName" />
+        <element api="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsNum" />
+        <element api="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsUnit" />
+        <element api="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsType" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.GoodsApply.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApply" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsName">
+      <apidata name="GoodsName" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_GoodsName" />
+      <setter name="set_GoodsName" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApply" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsNum">
+      <apidata name="GoodsNum" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_GoodsNum" />
+      <setter name="set_GoodsNum" />
+      <returns>
+        <type api="T:System.Decimal" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApply" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsType">
+      <apidata name="GoodsType" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_GoodsType" />
+      <setter name="set_GoodsType" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApply" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsUnit">
+      <apidata name="GoodsUnit" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_GoodsUnit" />
+      <setter name="set_GoodsUnit" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApply" ref="true" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.GoodsApplyForm">
+      <apidata name="GoodsApplyForm" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="true" />
+      <family>
+        <ancestors>
+          <type api="T:ZMS.BLL.OA.IApprove.FromBase" ref="true" />
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:ZMS.BLL.OA.IApprove.GoodsApplyForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)" />
+        <element api="M:ZMS.BLL.OA.IApprove.GoodsApplyForm.IsCheck" />
+        <element api="M:ZMS.BLL.OA.IApprove.GoodsApplyForm.#ctor" />
+        <element api="P:ZMS.BLL.OA.IApprove.GoodsApplyForm.List" />
+        <element api="P:ZMS.BLL.OA.IApprove.GoodsApplyForm.Total" />
+        <element api="M:ZMS.BLL.OA.IApprove.FromBase.IsValid" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.GoodsApplyForm.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApplyForm" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.GoodsApplyForm.IsCheck">
+      <apidata name="IsCheck" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <returns>
+        <type api="T:System.Boolean" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApplyForm" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.GoodsApplyForm.List">
+      <apidata name="List" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_List" />
+      <setter name="set_List" />
+      <returns>
+        <type api="T:System.Collections.Generic.List`1" ref="true">
+          <specialization>
+            <type api="T:ZMS.BLL.OA.IApprove.GoodsApply" ref="true" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApplyForm" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.GoodsApplyForm.Total">
+      <apidata name="Total" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Total" />
+      <setter name="set_Total" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApplyTotal" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApplyForm" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.GoodsApplyForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <apidata name="Validate" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="true" />
+      <overrides>
+        <member api="M:ZMS.BLL.OA.IApprove.FromBase.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+          <type api="T:ZMS.BLL.OA.IApprove.FromBase" ref="true" />
+        </member>
+      </overrides>
+      <parameters>
+        <parameter name="validationContext">
+          <type api="T:System.ComponentModel.DataAnnotations.ValidationContext" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+          <specialization>
+            <type api="T:System.ComponentModel.DataAnnotations.ValidationResult" ref="true" />
+          </specialization>
+        </type>
+      </returns>
+      <implements>
+        <member api="M:System.ComponentModel.DataAnnotations.IValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+          <type api="T:System.ComponentModel.DataAnnotations.IValidatableObject" ref="true" />
+        </member>
+      </implements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApplyForm" ref="true" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.GoodsApplyTotal">
+      <apidata name="GoodsApplyTotal" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="true" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:ZMS.BLL.OA.IApprove.GoodsApplyTotal.#ctor" />
+        <element api="P:ZMS.BLL.OA.IApprove.GoodsApplyTotal.TotalNum" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.GoodsApplyTotal.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApplyTotal" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.GoodsApplyTotal.TotalNum">
+      <apidata name="TotalNum" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_TotalNum" />
+      <setter name="set_TotalNum" />
+      <returns>
+        <type api="T:System.Decimal" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.GoodsApplyTotal" ref="true" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.IApprove">
+      <apidata name="IApprove" group="type" subgroup="interface" />
+      <typedata visibility="public" abstract="true" serializable="false" />
+      <elements>
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.Create(ZMS.BLL.OA.IApprove.CreatePostViewModel,System.String,System.Int32,System.Int32)" />
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.Audit(ZMS.BLL.OA.IApprove.AuditPostViewModel,System.String,System.Int32,System.Int32)" />
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.Cancel(System.Int32,System.Int32,System.String)" />
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.Del(System.Int32)" />
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.Browse(System.Int32,System.Int32,System.String)" />
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.Notice(System.Int32,System.String)" />
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.DiscussLog(System.Int32,System.Boolean,System.Int32,System.String)" />
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.getSingle(System.Int32)" />
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.getFlowList(System.Int32)" />
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.CheckToUser(System.Int32,System.Int32,System.String@)" />
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.CheckDepartment(System.Int32,System.Int32,System.Int32,System.String@,System.Int32,System.String@)" />
+        <element api="M:ZMS.BLL.OA.IApprove.IApprove.getApproveList(ZMS.BLL.OA.IApprove.SearchTabType,ZMS.BLL.OA.IApprove.SearchRequest,System.Int32,System.Int32)" />
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.Audit(ZMS.BLL.OA.IApprove.AuditPostViewModel,System.String,System.Int32,System.Int32)">
+      <apidata name="Audit" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="model">
+          <type api="T:ZMS.BLL.OA.IApprove.AuditPostViewModel" ref="true" />
+        </parameter>
+        <parameter name="userName">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="uid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="cid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Collections.Generic.KeyValuePair`2" ref="false">
+          <specialization>
+            <type api="T:ZMS.BLL.OA.IApprove.AuditResult" ref="false" />
+            <type api="T:ZMS.OA.Model.oa_ApproveInfo" ref="true" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.Browse(System.Int32,System.Int32,System.String)">
+      <apidata name="Browse" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="id">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="uid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="userName">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Boolean" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.Cancel(System.Int32,System.Int32,System.String)">
+      <apidata name="Cancel" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="id">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="uid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="userName">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Collections.Generic.KeyValuePair`2" ref="false">
+          <specialization>
+            <type api="T:ZMS.BLL.OA.IApprove.CancelResult" ref="false" />
+            <type api="T:ZMS.OA.Model.oa_ApproveInfo" ref="true" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.CheckDepartment(System.Int32,System.Int32,System.Int32,System.String@,System.Int32,System.String@)">
+      <apidata name="CheckDepartment" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="uid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="cid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="departID">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="departname" out="true">
+          <referenceTo>
+            <type api="T:System.String" ref="true" />
+          </referenceTo>
+        </parameter>
+        <parameter name="positionID">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="positionname" out="true">
+          <referenceTo>
+            <type api="T:System.String" ref="true" />
+          </referenceTo>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Boolean" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.CheckToUser(System.Int32,System.Int32,System.String@)">
+      <apidata name="CheckToUser" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="touid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="cid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="username" out="true">
+          <referenceTo>
+            <type api="T:System.String" ref="true" />
+          </referenceTo>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Boolean" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.Create(ZMS.BLL.OA.IApprove.CreatePostViewModel,System.String,System.Int32,System.Int32)">
+      <apidata name="Create" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="approveInfo">
+          <type api="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" ref="true" />
+        </parameter>
+        <parameter name="userName">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="uid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="cid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Collections.Generic.KeyValuePair`2" ref="false">
+          <specialization>
+            <type api="T:ZMS.BLL.OA.IApprove.CreateResult" ref="false" />
+            <type api="T:ZMS.OA.Model.oa_ApproveInfo" ref="true" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.Del(System.Int32)">
+      <apidata name="Del" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="id">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.DeleteResult" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.DiscussLog(System.Int32,System.Boolean,System.Int32,System.String)">
+      <apidata name="DiscussLog" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="id">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="type">
+          <type api="T:System.Boolean" ref="false" />
+        </parameter>
+        <parameter name="uid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="userName">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Boolean" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.getApproveList(ZMS.BLL.OA.IApprove.SearchTabType,ZMS.BLL.OA.IApprove.SearchRequest,System.Int32,System.Int32)">
+      <apidata name="getApproveList" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="tab">
+          <type api="T:ZMS.BLL.OA.IApprove.SearchTabType" ref="false" />
+        </parameter>
+        <parameter name="request">
+          <type api="T:ZMS.BLL.OA.IApprove.SearchRequest" ref="true" />
+        </parameter>
+        <parameter name="uid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="cid">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Collections.Generic.List`1" ref="true">
+          <specialization>
+            <type api="T:ZMS.OA.Model.oa_ApproveInfo" ref="true" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.getFlowList(System.Int32)">
+      <apidata name="getFlowList" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="appID">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Collections.Generic.List`1" ref="true">
+          <specialization>
+            <type api="T:ZMS.OA.Model.oa_ApproveFlow" ref="true" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.getSingle(System.Int32)">
+      <apidata name="getSingle" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="id">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:ZMS.OA.Model.oa_ApproveInfo" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.IApprove.Notice(System.Int32,System.String)">
+      <apidata name="Notice" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata abstract="true" virtual="true" />
+      <parameters>
+        <parameter name="id">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="userName">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:ZMS.OA.Model.oa_ApproveInfo" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.IApprove" ref="true" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.LeaveForm">
+      <apidata name="LeaveForm" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="true" />
+      <family>
+        <ancestors>
+          <type api="T:ZMS.BLL.OA.IApprove.FromBase" ref="true" />
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:ZMS.BLL.OA.IApprove.LeaveForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)" />
+        <element api="M:ZMS.BLL.OA.IApprove.LeaveForm.#ctor" />
+        <element api="P:ZMS.BLL.OA.IApprove.LeaveForm.StartTime" />
+        <element api="P:ZMS.BLL.OA.IApprove.LeaveForm.StopTime" />
+        <element api="P:ZMS.BLL.OA.IApprove.LeaveForm.Nums" />
+        <element api="P:ZMS.BLL.OA.IApprove.LeaveForm.Unit" />
+        <element api="P:ZMS.BLL.OA.IApprove.LeaveForm.LeavelType" />
+        <element api="P:ZMS.BLL.OA.IApprove.LeaveForm.Remark" />
+        <element api="M:ZMS.BLL.OA.IApprove.FromBase.IsValid" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.LeaveForm.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeaveForm" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.LeaveForm.LeavelType">
+      <apidata name="LeavelType" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_LeavelType" />
+      <setter name="set_LeavelType" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeaveForm" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.LeaveForm.Nums">
+      <apidata name="Nums" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Nums" />
+      <setter name="set_Nums" />
+      <returns>
+        <type api="T:System.Decimal" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeaveForm" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.LeaveForm.Remark">
+      <apidata name="Remark" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Remark" />
+      <setter name="set_Remark" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeaveForm" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.LeaveForm.StartTime">
+      <apidata name="StartTime" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_StartTime" />
+      <setter name="set_StartTime" />
+      <returns>
+        <type api="T:System.DateTime" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeaveForm" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.LeaveForm.StopTime">
+      <apidata name="StopTime" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_StopTime" />
+      <setter name="set_StopTime" />
+      <returns>
+        <type api="T:System.DateTime" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeaveForm" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.LeaveForm.Unit">
+      <apidata name="Unit" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Unit" />
+      <setter name="set_Unit" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeaveForm" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.LeaveForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <apidata name="Validate" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="true" />
+      <overrides>
+        <member api="M:ZMS.BLL.OA.IApprove.FromBase.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+          <type api="T:ZMS.BLL.OA.IApprove.FromBase" ref="true" />
+        </member>
+      </overrides>
+      <parameters>
+        <parameter name="validationContext">
+          <type api="T:System.ComponentModel.DataAnnotations.ValidationContext" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+          <specialization>
+            <type api="T:System.ComponentModel.DataAnnotations.ValidationResult" ref="true" />
+          </specialization>
+        </type>
+      </returns>
+      <implements>
+        <member api="M:System.ComponentModel.DataAnnotations.IValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+          <type api="T:System.ComponentModel.DataAnnotations.IValidatableObject" ref="true" />
+        </member>
+      </implements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeaveForm" ref="true" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.LeavelType">
+      <apidata name="LeavelType" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:ZMS.BLL.OA.IApprove.LeavelType.Thing" />
+        <element api="F:ZMS.BLL.OA.IApprove.LeavelType.WorkToHoliday" />
+        <element api="F:ZMS.BLL.OA.IApprove.LeavelType.Ill" />
+        <element api="F:ZMS.BLL.OA.IApprove.LeavelType.Marry" />
+        <element api="F:ZMS.BLL.OA.IApprove.LeavelType.Funeral" />
+        <element api="F:ZMS.BLL.OA.IApprove.LeavelType.Maternity" />
+        <element api="F:ZMS.BLL.OA.IApprove.LeavelType.Nursing" />
+        <element api="F:ZMS.BLL.OA.IApprove.LeavelType.InjuryJob" />
+        <element api="F:ZMS.BLL.OA.IApprove.LeavelType.Other" />
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.LeavelType.Funeral">
+      <apidata name="Funeral" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </returns>
+      <value>4</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.LeavelType.Ill">
+      <apidata name="Ill" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </returns>
+      <value>2</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.LeavelType.InjuryJob">
+      <apidata name="InjuryJob" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </returns>
+      <value>7</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.LeavelType.Marry">
+      <apidata name="Marry" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </returns>
+      <value>3</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.LeavelType.Maternity">
+      <apidata name="Maternity" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </returns>
+      <value>5</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.LeavelType.Nursing">
+      <apidata name="Nursing" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </returns>
+      <value>6</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.LeavelType.Other">
+      <apidata name="Other" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </returns>
+      <value>8</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.LeavelType.Thing">
+      <apidata name="Thing" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </returns>
+      <value>0</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.LeavelType.WorkToHoliday">
+      <apidata name="WorkToHoliday" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.LeavelType" ref="false" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.OptionLog">
+      <apidata name="OptionLog" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="true" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:ZMS.BLL.OA.IApprove.OptionLog.#ctor" />
+        <element api="P:ZMS.BLL.OA.IApprove.OptionLog.UserName" />
+        <element api="P:ZMS.BLL.OA.IApprove.OptionLog.Content" />
+        <element api="P:ZMS.BLL.OA.IApprove.OptionLog.OptionTime" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.OptionLog.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionLog" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.OptionLog.Content">
+      <apidata name="Content" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Content" />
+      <setter name="set_Content" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionLog" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.OptionLog.OptionTime">
+      <apidata name="OptionTime" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_OptionTime" />
+      <setter name="set_OptionTime" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionLog" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.OptionLog.UserName">
+      <apidata name="UserName" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_UserName" />
+      <setter name="set_UserName" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionLog" ref="true" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.OptionType">
+      <apidata name="OptionType" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:ZMS.BLL.OA.IApprove.OptionType.ToApprove" />
+        <element api="F:ZMS.BLL.OA.IApprove.OptionType.Notice" />
+        <element api="F:ZMS.BLL.OA.IApprove.OptionType.Aggree" />
+        <element api="F:ZMS.BLL.OA.IApprove.OptionType.Regict" />
+        <element api="F:ZMS.BLL.OA.IApprove.OptionType.Stop" />
+        <element api="F:ZMS.BLL.OA.IApprove.OptionType.Browse" />
+        <element api="F:ZMS.BLL.OA.IApprove.OptionType.Cancel" />
+        <element api="F:ZMS.BLL.OA.IApprove.OptionType.Discuss" />
+        <element api="F:ZMS.BLL.OA.IApprove.OptionType.Replay" />
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.OptionType.Aggree">
+      <apidata name="Aggree" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </returns>
+      <value>3</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.OptionType.Browse">
+      <apidata name="Browse" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </returns>
+      <value>6</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.OptionType.Cancel">
+      <apidata name="Cancel" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </returns>
+      <value>7</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.OptionType.Discuss">
+      <apidata name="Discuss" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </returns>
+      <value>8</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.OptionType.Notice">
+      <apidata name="Notice" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </returns>
+      <value>2</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.OptionType.Regict">
+      <apidata name="Regict" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </returns>
+      <value>4</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.OptionType.Replay">
+      <apidata name="Replay" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </returns>
+      <value>9</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.OptionType.Stop">
+      <apidata name="Stop" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </returns>
+      <value>5</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.OptionType.ToApprove">
+      <apidata name="ToApprove" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.OptionType" ref="false" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.SearchRequest">
+      <apidata name="SearchRequest" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:ZMS.BLL.OA.IApprove.SearchRequest.#ctor" />
+        <element api="P:ZMS.BLL.OA.IApprove.SearchRequest.PageSize" />
+        <element api="P:ZMS.BLL.OA.IApprove.SearchRequest.PageIndex" />
+        <element api="P:ZMS.BLL.OA.IApprove.SearchRequest.Title" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="M:ZMS.BLL.OA.IApprove.SearchRequest.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.SearchRequest" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.SearchRequest.PageIndex">
+      <apidata name="PageIndex" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_PageIndex" />
+      <setter name="set_PageIndex" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.SearchRequest" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.SearchRequest.PageSize">
+      <apidata name="PageSize" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_PageSize" />
+      <setter name="set_PageSize" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.SearchRequest" ref="true" />
+      </containers>
+    </api>
+    <api id="P:ZMS.BLL.OA.IApprove.SearchRequest.Title">
+      <apidata name="Title" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Title" />
+      <setter name="set_Title" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.SearchRequest" ref="true" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.SearchTabType">
+      <apidata name="SearchTabType" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:ZMS.BLL.OA.IApprove.SearchTabType.Approve" />
+        <element api="F:ZMS.BLL.OA.IApprove.SearchTabType.MyApprove" />
+        <element api="F:ZMS.BLL.OA.IApprove.SearchTabType.Refer" />
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.SearchTabType.Approve">
+      <apidata name="Approve" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.SearchTabType" ref="false" />
+      </returns>
+      <value>0</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.SearchTabType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.SearchTabType.MyApprove">
+      <apidata name="MyApprove" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.SearchTabType" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.SearchTabType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.SearchTabType.Refer">
+      <apidata name="Refer" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.SearchTabType" ref="false" />
+      </returns>
+      <value>2</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.SearchTabType" ref="false" />
+      </containers>
+    </api>
+    <api id="T:ZMS.BLL.OA.IApprove.TurnAndValidResult">
+      <apidata name="TurnAndValidResult" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.Error" />
+        <element api="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.Success" />
+        <element api="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.TurnError" />
+        <element api="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.ValidError" />
+        <element api="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.TypeError" />
+      </elements>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.Error">
+      <apidata name="Error" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+      </returns>
+      <value>0</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.Success">
+      <apidata name="Success" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.TurnError">
+      <apidata name="TurnError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+      </returns>
+      <value>2</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.TypeError">
+      <apidata name="TypeError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+      </returns>
+      <value>4</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.ValidError">
+      <apidata name="ValidError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+      </returns>
+      <value>3</value>
+      <containers>
+        <library assembly="ZMS.BLL.OA.IApprove" module="ZMS.BLL.OA.IApprove" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ZMS.BLL.OA.IApprove" />
+        <type api="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" ref="false" />
+      </containers>
+    </api>
+  </apis>
+</reflection>

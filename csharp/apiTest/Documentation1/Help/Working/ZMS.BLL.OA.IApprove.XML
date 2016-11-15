@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ZMS.BLL.OA.IApprove</name>
+  </assembly>
+  <members>
+    <member name="T:ZMS.BLL.OA.IApprove.IApprove">
+      <summary>
+            审批Bll
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Create(ZMS.BLL.OA.IApprove.CreatePostViewModel,System.String,System.Int32,System.Int32)">
+      <summary>
+            创建
+            </summary>
+      <param name="approveInfo">表单数据</param>
+      <param name="userName">用户名</param>
+      <param name="uid">用户ID</param>
+      <param name="cid">所在公司ID</param>
+      <returns>CreateResult:操作结果回执,oa_ApproveInfo成功则返回审批否则null值</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Audit(ZMS.BLL.OA.IApprove.AuditPostViewModel,System.String,System.Int32,System.Int32)">
+      <summary>
+            审批
+            </summary>
+      <param name="model">表单数据</param>
+      <param name="userName">用户名</param>
+      <param name="uid">用户ID</param>
+      <param name="cid">所在公司ID</param>
+      <returns>AuditResult:审批结果回执,oa_ApproveInfo成功则返回审批否则null值</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Cancel(System.Int32,System.Int32,System.String)">
+      <summary>
+            撤销
+            </summary>
+      <param name="id">审批ID</param>
+      <param name="uid">用户ID</param>
+      <param name="userName">用户名</param>
+      <returns>CancelResult:撤销结果回执,oa_ApproveInfo成功则返回审批否则null值</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Del(System.Int32)">
+      <summary>
+            删除审批
+            </summary>
+      <param name="id">审批id</param>
+      <returns>DeleteResult：撤销结果回执</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Browse(System.Int32,System.Int32,System.String)">
+      <summary>
+            浏览审批
+            </summary>
+      <param name="id">审批id</param>
+      <param name="uid">用户ID</param>
+      <param name="userName">用户名</param>
+      <returns>bool</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Notice(System.Int32,System.String)">
+      <summary>
+            催办
+            </summary>
+      <param name="id">审批id</param>
+      <param name="userName">用户名</param>
+      <returns>oa_ApproveInfo</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.DiscussLog(System.Int32,System.Boolean,System.Int32,System.String)">
+      <summary>
+            评论记录
+            </summary>
+      <param name="id">审批id</param>
+      <param name="type">是否评论/回复</param>
+      <param name="uid">用户id</param>
+      <param name="userName">用户名</param>
+      <returns>bool</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getSingle(System.Int32)">
+      <summary>
+            查一条
+            </summary>
+      <param name="id">审批id</param>
+      <returns>oa_ApproveInfo</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getFlowList(System.Int32)">
+      <summary>
+            获取流转列表
+            </summary>
+      <param name="appID">审批ID</param>
+      <returns>List<oa_ApproveFlow />列表</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.CheckToUser(System.Int32,System.Int32,System.String@)">
+      <summary>
+            检查审批人
+            </summary>
+      <param name="touid">送审人员</param>
+      <param name="cid">公司ID</param>
+      <param name="username">回执：用户名</param>
+      <returns>bool</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.CheckDepartment(System.Int32,System.Int32,System.Int32,System.String@,System.Int32,System.String@)">
+      <summary>
+            检查部门职位
+            </summary>
+      <param name="uid">
+      </param>
+      <param name="cid">
+      </param>
+      <param name="departID">
+      </param>
+      <param name="departname">
+      </param>
+      <param name="positionID">
+      </param>
+      <param name="positionname">
+      </param>
+      <returns>bool</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getApproveList(ZMS.BLL.OA.IApprove.SearchTabType,ZMS.BLL.OA.IApprove.SearchRequest,System.Int32,System.Int32)">
+      <summary>
+            获取审批列表
+            </summary>
+      <param name="tab">查询类型</param>
+      <param name="request">查询参数</param>
+      <returns>List<oa_ApproveInfo /></returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.CreatePostViewModel">
+      <summary>
+            审批申请post提交交互数据模型
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.CreateHelper">
+      <summary>
+            申请处理帮助类
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.CreateHelper.ToTurnAndValidate(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.BLL.OA.IApprove.TurnAndValidResult@)">
+      <summary>
+            数据序列化等及验证
+            </summary>
+      <param name="model">请求数据</param>
+      <param name="result">结果</param>
+      <returns>oa_ApproveInfo</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.CreateHelper.Turn(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.OA.Model.oa_ApproveInfo@)">
+      <summary>
+            从请求模型类到数据库类基础转换
+            </summary>
+      <param name="model">请求模型类</param>
+      <param name="approve">转换结果</param>
+      <returns>bool</returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.TurnAndValidResult">
+      <summary>
+            数据填充及验证返回结果枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.Error">
+      <summary>
+            系统错误
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.Success">
+      <summary>
+            成功
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.TurnError">
+      <summary>
+            序列化失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.ValidError">
+      <summary>
+            验证失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.TypeError">
+      <summary>
+            无相应类型
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.FromBase">
+      <summary>
+            表单基类
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.FromBase.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            继承类有特殊验证需要重写此方法
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.FromBase.IsValid">
+      <summary>
+            特性验证
+            </summary>
+      <returns>results未返回，需要返回再传回</returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.LeaveForm">
+      <summary>
+            请假表单
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.GoodsApplyForm">
+      <summary>
+            物资申请表单
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.OptionLog">
+      <summary>
+            操作日志类
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.OptionLog.UserName">
+      <summary>
+            用户名
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.OptionLog.Content">
+      <summary>
+            内容
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.OptionLog.OptionTime">
+      <summary>
+            操作时间
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.AuditPostViewModel">
+      <summary>
+            审批处理post提交交互模型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.content">
+      <summary>
+            审批内容
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.option">
+      <summary>
+            操作类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.appID">
+      <summary>
+            审批ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.uid">
+      <summary>
+            下一审批人id，可0值
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.notices">
+      <summary>
+            提醒方式列表
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.SearchRequest">
+      <summary>
+            搜索过滤请求类
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.SearchRequest.#ctor">
+      <summary>
+            构造函数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.PageSize">
+      <summary>
+            每页显示条数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.PageIndex">
+      <summary>
+            页索引
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.Title">
+      <summary>
+            表单标题
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.CreateResult">
+      <summary>
+            申请结果枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.SystemError">
+      <summary>
+            服务器抽风
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.DataCheck">
+      <summary>
+            数据校验失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.Success">
+      <summary>
+            成功
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.DataSave">
+      <summary>
+            数据保存失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.WriteLogError">
+      <summary>
+            记录失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.FlowError">
+      <summary>
+            流转失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.MsgSend">
+      <summary>
+            消息发送失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.TurnError">
+      <summary>
+            序列化失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.ValidError">
+      <summary>
+            验证失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.TypeError">
+      <summary>
+            无相应类型
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.ApproveUser">
+      <summary>
+            审批人不存在
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.DepartError">
+      <summary>
+            部门职位不存在或不可用
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.AuditResult">
+      <summary>
+            审批结果枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.SystemError">
+      <summary>
+            部门职位不存在或不可用
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.DataCheck">
+      <summary>
+            数据校验失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.Success">
+      <summary>
+            成功
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.DataSave">
+      <summary>
+            数据保存失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.WriteLogError">
+      <summary>
+            记录失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.FlowError">
+      <summary>
+            流转失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.MsgSend">
+      <summary>
+            消息发送失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.ApproveUser">
+      <summary>
+            审批人不存在
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.ParamError">
+      <summary>
+            参数有误
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.AppCancel">
+      <summary>
+            审批已被撤销
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.CancelResult">
+      <summary>
+            取消结果枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.SystemError">
+      <summary>
+            服务器抽风
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.ParamError">
+      <summary>
+            参数有误
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.Success">
+      <summary>
+            成功
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.DataSave">
+      <summary>
+            数据保存失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.WriteLogError">
+      <summary>
+            记录失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.FlowError">
+      <summary>
+            流转撤销失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.MsgSend">
+      <summary>
+            消息发送失败
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.DeleteResult">
+      <summary>
+            删除结果枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.DeleteResult.DataError">
+      <summary>
+            参数有误
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.DeleteResult.SystemError">
+      <summary>
+            服务器抽风/操作失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.DeleteResult.Success">
+      <summary>
+            成功
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.LeavelType">
+      <summary>
+            请假类型枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Thing">
+            [EnumTitle("事假")]
+        </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.WorkToHoliday">
+            [EnumTitle("倒休假")]
+        </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Ill">
+            [EnumTitle("病假")]
+        </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Marry">
+            [EnumTitle("婚假")]
+        </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Funeral">
+            [EnumTitle("丧假")]
+        </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Maternity">
+            [EnumTitle("产假")]
+        </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Nursing">
+            [EnumTitle("陪产假")]
+        </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.InjuryJob">
+            [EnumTitle("年休假")]
+        </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Other">
+            [EnumTitle("其他")]
+        </member>
+    <member name="T:ZMS.BLL.OA.IApprove.ApproveState">
+      <summary>
+            审批状态枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.ApproveState.ToApprove">
+      <summary>
+            审批中
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.ApproveState.Aggree">
+      <summary>
+            同意（完成）
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.ApproveState.Regict">
+      <summary>
+            驳回
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.ApproveState.Stop">
+      <summary>
+            终止
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.OptionType">
+      <summary>
+            操作枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.ToApprove">
+      <summary>
+            送审
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Notice">
+      <summary>
+            催办
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Aggree">
+      <summary>
+            同意（完成）
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Regict">
+      <summary>
+            驳回提醒
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Stop">
+      <summary>
+            终止提醒
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Browse">
+      <summary>
+            查阅
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Cancel">
+      <summary>
+            撤销
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Discuss">
+      <summary>
+            评论
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Replay">
+      <summary>
+            回复
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.SearchTabType">
+      <summary>
+            搜索tab分类枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.SearchTabType.Approve">
+      <summary>
+            我的申请
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.SearchTabType.MyApprove">
+      <summary>
+            我的审批
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.SearchTabType.Refer">
+      <summary>
+            查阅
+            </summary>
+    </member>
+    <member name="N:ZMS.BLL.OA.IApprove">
+      <summary />
+    </member>
+  </members>
+</doc>

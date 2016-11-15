@@ -1,0 +1,2194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ZMS.BLL.OA.IApprove</name>
+  </assembly>
+  <members>
+    <member name="T:ZMS.BLL.OA.IApprove.IApprove">
+      <summary>
+            审批Bll
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Create(ZMS.BLL.OA.IApprove.CreatePostViewModel,System.String,System.Int32,System.Int32)">
+      <summary>
+            创建
+            </summary>
+      <param name="approveInfo">表单数据</param>
+      <param name="userName">用户名</param>
+      <param name="uid">用户ID</param>
+      <param name="cid">所在公司ID</param>
+      <returns>CreateResult:操作结果回执,oa_ApproveInfo成功则返回审批否则null值</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Audit(ZMS.BLL.OA.IApprove.AuditPostViewModel,System.String,System.Int32,System.Int32)">
+      <summary>
+            审批
+            </summary>
+      <param name="model">表单数据</param>
+      <param name="userName">用户名</param>
+      <param name="uid">用户ID</param>
+      <param name="cid">所在公司ID</param>
+      <returns>AuditResult:审批结果回执,oa_ApproveInfo成功则返回审批否则null值</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Cancel(System.Int32,System.Int32,System.String)">
+      <summary>
+            撤销
+            </summary>
+      <param name="id">审批ID</param>
+      <param name="uid">用户ID</param>
+      <param name="userName">用户名</param>
+      <returns>CancelResult:撤销结果回执,oa_ApproveInfo成功则返回审批否则null值</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Del(System.Int32)">
+      <summary>
+            删除审批
+            </summary>
+      <param name="id">审批id</param>
+      <returns>DeleteResult：撤销结果回执</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Browse(System.Int32,System.Int32,System.String)">
+      <summary>
+            浏览审批
+            </summary>
+      <param name="id">审批id</param>
+      <param name="uid">用户ID</param>
+      <param name="userName">用户名</param>
+      <returns>bool</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.Notice(System.Int32,System.String)">
+      <summary>
+            催办
+            </summary>
+      <param name="id">审批id</param>
+      <param name="userName">用户名</param>
+      <returns>oa_ApproveInfo</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.DiscussLog(System.Int32,System.Boolean,System.Int32,System.String)">
+      <summary>
+            评论记录
+            </summary>
+      <param name="id">审批id</param>
+      <param name="type">是否评论/回复</param>
+      <param name="uid">用户id</param>
+      <param name="userName">用户名</param>
+      <returns>bool</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getSingle(System.Int32,System.Int32)">
+      <summary>
+            查一条
+            </summary>
+      <param name="id">审批id</param>
+      <param name="cid">公司ID</param>
+            /// <returns>oa_ApproveInfo</returns></member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getFlowList(System.Int32)">
+      <summary>
+            获取流转列表
+            </summary>
+      <param name="appID">审批ID</param>
+      <returns>List<oa_ApproveFlow />列表</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.CheckToUser(System.Int32,System.Int32,System.String@)">
+      <summary>
+            检查审批人
+            </summary>
+      <param name="touid">送审人员</param>
+      <param name="cid">公司ID</param>
+      <param name="username">回执：用户名</param>
+      <returns>bool</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.CheckDepartment(System.Int32,System.Int32,System.Int32,System.String@,System.Int32,System.String@)">
+      <summary>
+            检查部门职位
+            </summary>
+      <param name="uid">
+      </param>
+      <param name="cid">
+      </param>
+      <param name="departID">
+      </param>
+      <param name="departname">
+      </param>
+      <param name="positionID">
+      </param>
+      <param name="positionname">
+      </param>
+      <returns>bool</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getApproveList(ZMS.BLL.OA.IApprove.SearchTabType,ZMS.BLL.OA.IApprove.SearchRequest,System.Int32,System.Int32)">
+      <summary>
+            获取审批列表
+            </summary>
+      <param name="tab">查询类型</param>
+      <param name="request">查询参数</param>
+      <param name="uid">用户id</param>
+      <param name="cid">公司id</param>
+      <returns>List<oa_ApproveInfo /></returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getUDPList(System.Int32,System.Int32)">
+      <summary>
+            获取用户所在公司部门职位列表
+            </summary>
+      <param name="uid">用户id</param>
+      <param name="cid">用户公司id</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getDepartList(System.Int32,System.Int32)">
+      <summary>
+            获取当前公司部门列表
+            </summary>
+      <param name="uid">当前用户</param>
+      <param name="cid">公司ID</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getCanCancel(System.Int32,System.Int32,System.Int32)">
+      <summary>
+            获取当前用户是否可撤销该审批
+            </summary>
+      <param name="id">审批ID</param>
+      <param name="uid">用户ID</param>
+      <param name="cid">公司ID</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getApproveList2(System.Int32,ZMS.BLL.OA.IApprove.ApproveParam)">
+      <summary>
+            分类过滤获取审批列表详情方法
+            </summary>
+      <param name="cid">公司ID</param>
+      <param name="param">参数列表对象</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getAttendanceList(System.Int32,System.Int32,ZMS.BLL.OA.IApprove.AttendanceCheckParam)">
+      <summary>
+            考勤获取部分审批列表方法
+            </summary>
+      <param name="uid">用户ID</param>
+      <param name="cid">公司ID</param>
+      <param name="param">参数列表对象</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getUserAppInfo(System.Int32,System.Int32,ZMS.BLL.OA.IApprove.UserInfoType,System.Object)">
+      <summary>
+            获取用户审批汇总信息
+            </summary>
+      <param name="uid">用户id</param>
+      <param name="cid">用户公司id</param>
+      <param name="type">获取数据类型</param>
+      <param name="param">其他参数</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getApproveTypeStatistic(ZMS.BLL.OA.IApprove.ApproveTypeStatisticParam,System.Int32,System.Int32)">
+      <summary>
+            获取审批统计值
+            </summary>
+      <param name="param">查询参数</param>
+      <param name="uid">当前用户ID</param>
+      <param name="cid">当前公司ID</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IApprove.getAttendanceStatistic(ZMS.BLL.OA.IApprove.AttendanceCheckStatisticParam,System.Int32)">
+      <summary>
+            考勤统计方法
+            </summary>
+      <param name="param">
+      </param>
+      <param name="cid">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.CreatePostViewModel">
+      <summary>
+            审批申请post提交交互数据模型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Type">
+      <summary>
+            表单分类
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.DepartmentID">
+      <summary>
+            部门ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.DepartmentName">
+      <summary>
+            部门名称
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.PositionID">
+      <summary>
+            职位ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.PositionName">
+      <summary>
+            职位名称
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Title">
+      <summary>
+            标题（表单名称）
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.AttachmentGUID">
+      <summary>
+            附件
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.JsonContent">
+      <summary>
+            表单内容
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.ToUid">
+      <summary>
+            下一审批人ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.ToUserName">
+      <summary>
+            下一审批人名称
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Notices">
+      <summary>
+            提醒方式
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.CreateHelper">
+      <summary>
+            申请处理帮助类
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.CreateHelper.ToTurnAndValidate(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.BLL.OA.IApprove.TurnAndValidResult@,System.Func{System.Object,System.Object})">
+      <summary>
+            数据序列化等及验证
+            </summary>
+      <param name="model">请求数据</param>
+      <param name="result">结果</param>
+      <param name="OtherValidate">需要数据库验证的方法</param>
+      <returns>oa_ApproveInfo</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.CreateHelper.MainFun``1(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.BLL.OA.IApprove.TurnAndValidResult@,ZMS.OA.Model.oa_ApproveInfo@,System.Func{``0,``0})">
+      <summary>
+            数据序列化等及验证------主方法
+            </summary>
+      <typeparam name="T">继承自FromBase的表单类</typeparam>
+      <param name="model">请求模型类</param>
+      <param name="result">转换验证结果</param>
+      <param name="approve">转换结果</param>
+      <param name="OtherValidate">需要数据库验证的方法</param>
+      <returns>转换结果</returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.CreateHelper.Turn(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.OA.Model.oa_ApproveInfo@)">
+      <summary>
+            从请求模型类到数据库类基础转换
+            </summary>
+      <param name="model">请求模型类</param>
+      <param name="approve">转换结果</param>
+      <returns>bool</returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.TurnAndValidResult">
+      <summary>
+            数据填充及验证返回结果枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.Error">
+      <summary>
+            系统错误
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.Success">
+      <summary>
+            成功
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.TurnError">
+      <summary>
+            序列化失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.ValidError">
+      <summary>
+            验证失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.TurnAndValidResult.TypeError">
+      <summary>
+            无相应类型
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.FormBase">
+      <summary>
+            表单基类
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.FormBase.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            继承类有特殊验证需要重写此方法
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.FormBase.IsValid">
+      <summary>
+            特性验证
+            </summary>
+      <returns>results未返回，需要返回再传回</returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.LeaveForm">
+      <summary>
+            请假表单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveForm.StartTime">
+      <summary>
+            请假开始时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveForm.StopTime">
+      <summary>
+            请假结束时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveForm.Nums">
+      <summary>
+            请假天数/小时数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveForm.Unit">
+      <summary>
+            单位
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveForm.LeavelType">
+      <summary>
+            请假类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveForm.Reason">
+      <summary>
+            请假理由
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.LeaveForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.BusinessLeaveForm">
+      <summary>
+            出差申请表单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BusinessLeaveForm.StartTime">
+      <summary>
+            开始时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BusinessLeaveForm.StopTime">
+      <summary>
+            结束时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BusinessLeaveForm.Nums">
+      <summary>
+            天数/小时数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BusinessLeaveForm.Unit">
+      <summary>
+            单位
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BusinessLeaveForm.Money">
+      <summary>
+            费用预算
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BusinessLeaveForm.Address">
+      <summary>
+            地点
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BusinessLeaveForm.Reason">
+      <summary>
+            出差事项
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.BusinessLeaveForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.GoOutForm">
+      <summary>
+            外出申请表单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoOutForm.StartTime">
+      <summary>
+            开始时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoOutForm.StopTime">
+      <summary>
+            结束时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoOutForm.Nums">
+      <summary>
+            天数/小时数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoOutForm.Unit">
+      <summary>
+            单位
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoOutForm.Reason">
+      <summary>
+            出差事项
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.GoOutForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.ExtraWorkForm">
+      <summary>
+            加班申请表单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ExtraWorkForm.StartTime">
+      <summary>
+            开始时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ExtraWorkForm.StopTime">
+      <summary>
+            结束时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ExtraWorkForm.Nums">
+      <summary>
+            天数/小时数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ExtraWorkForm.Unit">
+      <summary>
+            单位
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ExtraWorkForm.IsLegalHoliday">
+      <summary>
+            是否法定假日
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ExtraWorkForm.Type">
+      <summary>
+            类型（申请加班核算方式）
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ExtraWorkForm.Reason">
+      <summary>
+            理由
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.ExtraWorkForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.BecomeFullForm">
+      <summary>
+            转正申请单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BecomeFullForm.Time">
+      <summary>
+            入职日期
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BecomeFullForm.Days">
+      <summary>
+            试用期天数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BecomeFullForm.PrePositionID">
+      <summary>
+            试用期职位id
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BecomeFullForm.PrePosition">
+      <summary>
+            试用期岗位
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BecomeFullForm.PositionID">
+      <summary>
+            转正职位id
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BecomeFullForm.Position">
+      <summary>
+            转正岗位
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BecomeFullForm.Content1">
+      <summary>
+            对本岗位的理解 
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BecomeFullForm.Content2">
+      <summary>
+            试用期内对工作的总结回顾
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BecomeFullForm.Content3">
+      <summary>
+            试用期内的工作的优点及不足
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BecomeFullForm.Content4">
+      <summary>
+            不足之处的改进措施
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.BecomeFullForm.Content5">
+      <summary>
+            对公司,业务等方面的建议意见
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.BecomeFullForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.LeaveOfficeForm">
+      <summary>
+            离职申请单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveOfficeForm.EntryTime">
+      <summary>
+            入职日期
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveOfficeForm.LeaveTime">
+      <summary>
+            离职日期
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveOfficeForm.UserID">
+      <summary>
+            交接人员ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveOfficeForm.UserName">
+      <summary>
+            交接人员姓名
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveOfficeForm.ContractStartTime">
+      <summary>
+            合同开始时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveOfficeForm.ContractEndTime">
+      <summary>
+            合同终止时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveOfficeForm.Reason">
+      <summary>
+            离职原因 
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.LeaveOfficeForm.Things">
+      <summary>
+            交接事项
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.LeaveOfficeForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.WorkInstructionsForm">
+      <summary>
+            工作请示单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.WorkInstructionsForm.Time">
+      <summary>
+            时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.WorkInstructionsForm.Label">
+      <summary>
+            紧急程度
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.WorkInstructionsForm.Thing">
+      <summary>
+            事由
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.WorkInstructionsForm.Content">
+      <summary>
+            内容
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.WorkInstructionsForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.UseSealForm">
+      <summary>
+            用印申请单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.UseSealForm.Time">
+      <summary>
+            时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.UseSealForm.DepartID">
+      <summary>
+            部门ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.UseSealForm.DepartName">
+      <summary>
+            部门名称
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.UseSealForm.DocumentName">
+      <summary>
+            文件名称
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.UseSealForm.FileCount">
+      <summary>
+            文件数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.UseSealForm.FileType">
+      <summary>
+            文件类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.UseSealForm.SealType">
+      <summary>
+            印章类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.UseSealForm.Remark">
+      <summary>
+            内容
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.UseSealForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.GoodsApplyForm">
+      <summary>
+            物资申请表单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoodsApplyForm.UseType">
+      <summary>
+            用途
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoodsApplyForm.List">
+      <summary>
+            详情列表
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoodsApplyForm.Total">
+      <summary>
+            统计
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.GoodsApplyForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.GoodsApplyForm.IsCheck">
+      <summary>
+            验证用到的合计检测
+            </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.GoodsApply">
+      <summary>
+            物资申请项
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsName">
+      <summary>
+            物资名称
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsNum">
+      <summary>
+            物资数目
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsUnit">
+      <summary>
+            物资单位
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsType">
+      <summary>
+            物资关联id
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoodsApply.Remark">
+      <summary>
+            备注
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.GoodsApplyTotal">
+      <summary>
+            物资申请统计类
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.GoodsApplyTotal.TotalNum">
+      <summary>
+            数目合计
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.PurchaseForm">
+      <summary>
+            采购申请表单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseForm.ApplyType">
+      <summary>
+            申请类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseForm.Money">
+      <summary>
+            费用预算
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseForm.Reason">
+      <summary>
+            事由
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseForm.Time">
+      <summary>
+            时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseForm.List">
+      <summary>
+            详情列表
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseForm.Total">
+      <summary>
+            统计
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.PurchaseForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.PurchaseForm.IsCheck">
+      <summary>
+            验证用到的合计检测
+            </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.PurchaseItem">
+      <summary>
+            物资采购项
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseItem.GoodsName">
+      <summary>
+            物资名称
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseItem.GoodsNum">
+      <summary>
+            物资数目
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseItem.GoodsType">
+      <summary>
+            物资型号
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseItem.UseTo">
+      <summary>
+            用途
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseItem.Remark">
+      <summary>
+            备注
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.PurchaseTotal">
+      <summary>
+            物资申请统计类
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PurchaseTotal.TotalNum">
+      <summary>
+            数目合计
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.ReimbursementForm">
+      <summary>
+            报销申请表单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ReimbursementForm.List">
+      <summary>
+            详情列表
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ReimbursementForm.Total">
+      <summary>
+            统计
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.ReimbursementForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.ReimbursementForm.IsCheck">
+      <summary>
+            验证用到的合计检测
+            </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.Reimbursement">
+      <summary>
+            报销项
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.Reimbursement.Subject">
+      <summary>
+            摘要
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.Reimbursement.Money">
+      <summary>
+            金额
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.Reimbursement.Document">
+      <summary>
+            单据
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.Reimbursement.Num">
+      <summary>
+            张数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.Reimbursement.Remark">
+      <summary>
+            备注
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.ReimbursementTotal">
+      <summary>
+            报销统计类
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ReimbursementTotal.TotalNum">
+      <summary>
+            数目合计
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ReimbursementTotal.TotalMoney">
+      <summary>
+            金额合计
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.PaymentForm">
+      <summary>
+            付款表单
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PaymentForm.Time">
+      <summary>
+            支付日期
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PaymentForm.Money">
+      <summary>
+            金额
+             </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PaymentForm.Type">
+      <summary>
+            支付方式
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PaymentForm.Element">
+      <summary>
+            支付对象
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PaymentForm.AccountBank">
+      <summary>
+            开户行
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PaymentForm.AccountNum">
+      <summary>
+            银行账户
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.PaymentForm.Reason">
+      <summary>
+            事由
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.PaymentForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.FormTypeEnum">
+      <summary>
+            审批表单类型枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.Leave">
+      <summary>
+            请假
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.Reimbursement">
+      <summary>
+            报销
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.GoodsApply">
+      <summary>
+            物品申请
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.WorkInstructions">
+      <summary>
+            工作请示
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.BusinessLeave">
+      <summary>
+            出差
+             </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.GoOut">
+      <summary>
+            外出
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.Purchase">
+      <summary>
+            采购
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.Payment">
+      <summary>
+            支付
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.UseSeal">
+      <summary>
+            用印
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.BecomeFull">
+      <summary>
+            转正
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.LeaveOffice">
+      <summary>
+            离职
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.FormTypeEnum.ExtraWork">
+      <summary>
+            加班
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.UdpList">
+      <summary>
+            用户部门职位扩展对象
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.UdpList.DepartmentName">
+      <summary>
+            部门名称
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.UdpList.PositionName">
+      <summary>
+            职位名称
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.OptionLog">
+      <summary>
+            操作日志类
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.OptionLog.UserName">
+      <summary>
+            用户名
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.OptionLog.Content">
+      <summary>
+            内容
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.OptionLog.OptionTime">
+      <summary>
+            操作时间
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.AuditPostViewModel">
+      <summary>
+            审批处理post提交交互模型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.content">
+      <summary>
+            审批内容
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.option">
+      <summary>
+            操作类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.appID">
+      <summary>
+            审批ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.uid">
+      <summary>
+            下一审批人id，可0值
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.notices">
+      <summary>
+            提醒方式列表
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.SearchRequest">
+      <summary>
+            搜索过滤请求类
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.SearchRequest.#ctor">
+      <summary>
+            构造函数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.PageSize">
+      <summary>
+            每页显示条数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.PageIndex">
+      <summary>
+            页索引
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.Type">
+      <summary>
+            表单类型（0值查询全部类型）
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.State">
+      <summary>
+            审批状态（-1查询全部状态）
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.UserName">
+      <summary>
+            申请人
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.CurUserName">
+      <summary>
+            当前审批人
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.AppUserName">
+      <summary>
+            参与审批人
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.Start">
+      <summary>
+            开始时间
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.End">
+      <summary>
+            结束时间
+             </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SearchRequest.Sorts">
+      <summary>
+            排序
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.SearchRequest.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            额外验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.Sort">
+      <summary>
+            排序通用类
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.Sort.ColType">
+      <summary>
+            排序字段
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.Sort.IsAsc">
+      <summary>
+            是否升序
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.Sort.Priority">
+      <summary>
+            优先级
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.CreateResult">
+      <summary>
+            申请结果枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.SystemError">
+      <summary>
+            服务器抽风
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.DataCheck">
+      <summary>
+            数据校验失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.Success">
+      <summary>
+            成功
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.DataSave">
+      <summary>
+            数据保存失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.WriteLogError">
+      <summary>
+            记录失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.FlowError">
+      <summary>
+            流转失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.MsgSend">
+      <summary>
+            消息发送失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.TurnError">
+      <summary>
+            序列化失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.ValidError">
+      <summary>
+            验证失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.TypeError">
+      <summary>
+            无相应类型
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.ApproveUser">
+      <summary>
+            审批人不存在
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CreateResult.DepartError">
+      <summary>
+            部门职位不存在或不可用
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.AuditResult">
+      <summary>
+            审批结果枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.SystemError">
+      <summary>
+            部门职位不存在或不可用
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.DataCheck">
+      <summary>
+            数据校验失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.Success">
+      <summary>
+            成功
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.DataSave">
+      <summary>
+            数据保存失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.WriteLogError">
+      <summary>
+            记录失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.FlowError">
+      <summary>
+            流转失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.MsgSend">
+      <summary>
+            消息发送失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.ApproveUser">
+      <summary>
+            审批人不存在
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.ParamError">
+      <summary>
+            参数有误
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AuditResult.AppCancel">
+      <summary>
+            审批已被撤销
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.CancelResult">
+      <summary>
+            取消结果枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.SystemError">
+      <summary>
+            服务器抽风
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.ParamError">
+      <summary>
+            参数有误
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.Success">
+      <summary>
+            成功
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.DataSave">
+      <summary>
+            数据保存失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.WriteLogError">
+      <summary>
+            记录失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.FlowError">
+      <summary>
+            流转撤销失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.CancelResult.MsgSend">
+      <summary>
+            消息发送失败
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.DeleteResult">
+      <summary>
+            删除结果枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.DeleteResult.DataError">
+      <summary>
+            参数有误
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.DeleteResult.SystemError">
+      <summary>
+            服务器抽风/操作失败
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.DeleteResult.Success">
+      <summary>
+            成功
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.LeavelType">
+      <summary>
+            请假类型枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Thing">
+      <summary>
+            事假
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.WorkToHoliday">
+      <summary>
+            倒休假
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Ill">
+      <summary>
+            病假
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Marry">
+      <summary>
+            婚假
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Funeral">
+      <summary>
+            丧假
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Maternity">
+      <summary>
+            产假
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Nursing">
+      <summary>
+            陪产假
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.InjuryJob">
+      <summary>
+            年休假
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.LeavelType.Other">
+      <summary>
+            其他
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.ApproveState">
+      <summary>
+            审批状态枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.ApproveState.ToApprove">
+      <summary>
+            审批中
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.ApproveState.Aggree">
+      <summary>
+            同意（完成）
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.ApproveState.Regict">
+      <summary>
+            驳回
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.ApproveState.Stop">
+      <summary>
+            终止
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.OptionType">
+      <summary>
+            操作枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.ToApprove">
+      <summary>
+            送审
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Notice">
+      <summary>
+            催办
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Aggree">
+      <summary>
+            同意（完成）
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Regict">
+      <summary>
+            驳回提醒
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Stop">
+      <summary>
+            终止提醒
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Browse">
+      <summary>
+            查阅
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Cancel">
+      <summary>
+            撤销
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Discuss">
+      <summary>
+            评论
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OptionType.Replay">
+      <summary>
+            回复
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.SearchTabType">
+      <summary>
+            搜索tab分类枚举
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.SearchTabType.Approve">
+      <summary>
+            我的申请
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.SearchTabType.MyApprove">
+      <summary>
+            我的审批
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.SearchTabType.Refer">
+      <summary>
+            查阅
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.AppInfoColType">
+      <summary>
+            排序用审批表格排序列类型
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AppInfoColType.CreateTime">
+      <summary>
+            时间
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AppInfoColType.UserName">
+      <summary>
+            申请人姓名
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AppInfoColType.CurUserName">
+      <summary>
+            当前处理人姓名
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AppInfoColType.State">
+      <summary>
+            状态
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AppInfoColType.Type">
+      <summary>
+            审批表类型
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.AppInfoColType.TypeName">
+      <summary>
+            审批表单名称
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.UserInfoType">
+      <summary>
+            用户审批信息汇总类型枚举 -----------------修改时注意同步修改数据库存储过程
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.UserInfoType.LeaveSum">
+      <summary>
+            请假
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.UserInfoType.AttendanceStatistic">
+      <summary>
+            考勤用合计
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.OprateEnum">
+      <summary>
+            比较符
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OprateEnum.等于">
+      <summary>
+            等于
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OprateEnum.大于">
+      <summary>
+            大于
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OprateEnum.小于">
+      <summary>
+            小于
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OprateEnum.包含">
+      <summary>
+            包含
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OprateEnum.不等于">
+      <summary>
+            不等于
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OprateEnum.Between">
+      <summary>
+            Between
+            </summary>
+    </member>
+    <member name="F:ZMS.BLL.OA.IApprove.OprateEnum.IsNull">
+      <summary>
+            可空
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.MyLeaveStatisticParam">
+      <summary>
+            我的请假统计额外参数类
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticParam.otherType">
+      <summary>
+            请假类型，0值为所有
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticParam.state">
+      <summary>
+            审批状态，-1为所有
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticParam.start">
+      <summary>
+            开始时间范围
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticParam.end">
+      <summary>
+            结束时间范围
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.MyLeaveStatisticParam.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            特殊验证处理
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.MyLeaveStatisticTable">
+      <summary>
+            我的请假统计数据表
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticTable.Nums">
+      <summary>
+            小时数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticTable.LeaveType">
+      <summary>
+            请假类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticTable.State">
+      <summary>
+            审批状态
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticTable.IsApp">
+      <summary>
+            我申请的
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticTable.IsMyApp">
+      <summary>
+            我审批的
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.MyLeaveStatisticSum">
+      <summary>
+            我的请假统计合计类
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticSum.AppCount">
+      <summary>
+            总申请请假数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticSum.MyAppCount">
+      <summary>
+            总审批请假数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticSum.AppNums">
+      <summary>
+            总申请请假小时数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticSum.MyAppNums">
+      <summary>
+            总审批请假小时数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticSum.AgreeAppCount">
+      <summary>
+            我申请通过的请假数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticSum.MyAgreeAppCount">
+      <summary>
+            我审批通过的请假数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticSum.AgreeAppNums">
+      <summary>
+            我申请通过的请假小时数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticSum.MyAgreeAppNums">
+      <summary>
+            我审批通过的请假小时数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticSum.AgreeThingsNums">
+      <summary>
+            通过的事假小时数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.MyLeaveStatisticSum.AgreeWorkToHolidayNums">
+      <summary>
+            通过的倒休假小时数
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.ApproveTypeStatistic">
+      <summary>
+            审批汇总统计1-----------返回对象
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveTypeStatistic.UserID">
+      <summary>
+            用户ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveTypeStatistic.UserName">
+      <summary>
+            用户名
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveTypeStatistic.Type">
+      <summary>
+            表单类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveTypeStatistic.Count">
+      <summary>
+            合计数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveTypeStatistic.State">
+      <summary>
+            状态
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.ApproveTypeStatisticParam">
+      <summary>
+             审批汇总统计1------------参数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveTypeStatisticParam.Year">
+      <summary>
+            查询年，0为所有
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveTypeStatisticParam.Month">
+      <summary>
+            查询月，0为所有月
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveTypeStatisticParam.DepartID">
+      <summary>
+            部门ID，0为不区分部门
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveTypeStatisticParam.PositionID">
+      <summary>
+            职位ID，0为不区分职位
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveTypeStatisticParam.IsMy">
+      <summary>
+            是否我申请的
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveTypeStatisticParam.IsMyApp">
+      <summary>
+            是否我审批的
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.ApproveTypeStatisticParam.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.AttendanceCheckParam">
+      <summary>
+            考勤查询参数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckParam.Type">
+      <summary>
+            审批类型
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticParam">
+      <summary>
+            考勤统计查询参数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticParam.Types">
+      <summary>
+            审批类型列表
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticParam.Uid">
+      <summary>
+            用户ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticParam.DepartID">
+      <summary>
+            部门ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticParam.PositionID">
+      <summary>
+            职位ID
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticParam.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证交互参数正确性
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticTable">
+      <summary>
+            考勤统计结果列表
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticTable.UserID">
+      <summary>
+            用户id
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticTable.Type">
+      <summary>
+            类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticTable.otherType">
+      <summary>
+            请假类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticTable.IsLegalHoliday">
+      <summary>
+            是否假期
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticTable.Money">
+      <summary>
+            金额
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticTable.State">
+      <summary>
+            状态
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticTable.Count">
+      <summary>
+            数目
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.AttendanceCheckStatisticTable.Nums">
+      <summary>
+            小时数
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.ApproveParam">
+      <summary>
+            查询参数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveParam.IsNeedSplitList">
+      <summary>
+            如果有子表，是否需要拆分List子表
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveParam.Type">
+      <summary>
+            审批类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveParam.State">
+      <summary>
+            审批状态
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveParam.Uid">
+      <summary>
+            用户ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveParam.DepartID">
+      <summary>
+            部门ID
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveParam.PositionID">
+      <summary>
+            职位ID
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.ApproveParam.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证交互参数正确性
+            </summary>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.IntArrayAttribute">
+      <summary>
+            	 摘要:
+                指定数据字段值的数值范围约束。
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IntArrayAttribute.#ctor(System.Boolean,System.Int32,System.Int32)">
+      <summary>
+             摘要:
+                 使用指定的最小值和最大值初始化 System.ComponentModel.DataAnnotations.IntArrayAttribute 类的一个新实例。
+            
+             参数:
+               maxInt:
+                 指定数据字段值所允许的最大值。
+            
+               minInt:
+                 指定数据字段值所允许的最小值。
+             </summary>
+      <param name="canNull">可空</param>
+      <param name="maxInt">最大值</param>
+      <param name="minInt">最小值</param>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.IntArrayAttribute.canNull">
+      <summary>
+            可空
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.IntArrayAttribute.maxInt">
+      <summary>
+            最大值
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.IntArrayAttribute.minInt">
+      <summary>
+            最小值
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IntArrayAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+      <summary>
+            验证int数组成员范围
+            </summary>
+      <param name="value">
+      </param>
+      <param name="validationContext">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.IntArrayAttribute.FormatErrorMessage(System.String)">
+      <summary>
+            格式化错误信息
+            </summary>
+      <param name="name">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.ApproveStatisticBaseParam">
+      <summary>
+            审批统计base参数
+            </summary>
+    </member>
+    <member name="M:ZMS.BLL.OA.IApprove.ApproveStatisticBaseParam.#ctor">
+      <summary>
+            基础参数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveStatisticBaseParam.PageSize">
+      <summary>
+            每页显示条数
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveStatisticBaseParam.PageIndex">
+      <summary>
+            页索引
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveStatisticBaseParam.selectList">
+      <summary>
+            查询字段列表
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveStatisticBaseParam.subListSelect">
+      <summary>
+            List子表查询项
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveStatisticBaseParam.whereList">
+      <summary>
+            查询条件列表
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveStatisticBaseParam.subListWhere">
+      <summary>
+            List子表条件
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.ApproveStatisticBaseParam.sortList">
+      <summary>
+            查询排序列表
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.SelectItem">
+      <summary>
+            筛选项
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SelectItem.ColumnAsName">
+      <summary>
+            显示名
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SelectItem.Column">
+      <summary>
+            列名
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SelectItem.DataType">
+      <summary>
+            列数据类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SelectItem.IsJson">
+      <summary>
+            是否json字符串
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.WhereItem">
+      <summary>
+            条件项
+             </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.WhereItem.Column">
+      <summary>
+            列名
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.WhereItem.DataType">
+      <summary>
+            列数据类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.WhereItem.IsJson">
+      <summary>
+            是否是json字符串
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.WhereItem.Oprate">
+      <summary>
+            比较符
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.WhereItem.param1">
+      <summary>
+            参数1
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.WhereItem.param2">
+      <summary>
+            参数2
+            </summary>
+    </member>
+    <member name="T:ZMS.BLL.OA.IApprove.SortItem">
+      <summary>
+            sql排序对象
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SortItem.ColumnName">
+      <summary>
+            排序字段
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SortItem.DataType">
+      <summary>
+            数据类型
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SortItem.IsAsc">
+      <summary>
+            是否升序
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SortItem.IsJson">
+      <summary>
+            是否json字段
+            </summary>
+    </member>
+    <member name="P:ZMS.BLL.OA.IApprove.SortItem.Priority">
+      <summary>
+            优先级
+            </summary>
+    </member>
+    <member name="N:ZMS.BLL.OA.IApprove">
+      <summary />
+    </member>
+    <member name="N:ZMS.UI.OA.Web.Approve">
+      <summary />
+    </member>
+    <member name="N:ZMS.UI.OA.Web.Approve.Controllers">
+      <summary />
+    </member>
+  </members>
+</doc>

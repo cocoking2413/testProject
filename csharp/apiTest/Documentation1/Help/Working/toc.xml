@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topics>
+  <topic id="05351287-fbab-47d6-b234-a7d9410a8c3d" file="05351287-fbab-47d6-b234-a7d9410a8c3d" sortOrder="0" />
+  <topic id="21854f7c-0f1e-4c04-b65e-ed00e3fe7181" file="21854f7c-0f1e-4c04-b65e-ed00e3fe7181">
+    <topic id="e6471a6d-9fc2-448c-ae14-3b3d91871dc6" file="e6471a6d-9fc2-448c-ae14-3b3d91871dc6" />
+  </topic>
+  <topic id="N:ZMS.BLL.OA.IApprove" project="_Namespaces" file="e295b214-1d9b-212c-590e-fedabc7044a0" sortOrder="2">
+    <topic id="T:ZMS.BLL.OA.IApprove.ApproveState" project="ZMS.BLL.OA.IApprove" file="56d66459-f250-5b0c-a7df-ed1292f282d5" />
+    <topic id="T:ZMS.BLL.OA.IApprove.AuditPostViewModel" project="ZMS.BLL.OA.IApprove" file="f86c1fca-abee-7278-5e8b-a84e96a7c8f9">
+      <topic id="M:ZMS.BLL.OA.IApprove.AuditPostViewModel.#ctor" project="ZMS.BLL.OA.IApprove" file="a4ecca58-7c42-e79d-f474-52e045609225" />
+      <topic id="Methods.T:ZMS.BLL.OA.IApprove.AuditPostViewModel" project="ZMS.BLL.OA.IApprove" file="80fb4089-151c-17b0-8366-1917b5819fe0" />
+      <topic id="Properties.T:ZMS.BLL.OA.IApprove.AuditPostViewModel" project="ZMS.BLL.OA.IApprove" file="ca6af1f0-4cdb-9f27-542e-2b201c693dd0">
+        <topic id="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.appID" project="ZMS.BLL.OA.IApprove" file="fe6cdfb1-20a4-a5a4-e884-6f18fdc224f5" />
+        <topic id="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.content" project="ZMS.BLL.OA.IApprove" file="533f1ff6-a9bb-6db2-b238-4d9bad238cfd" />
+        <topic id="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.notices" project="ZMS.BLL.OA.IApprove" file="94c570e6-ef45-1fc6-20ad-76a954b330f1" />
+        <topic id="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.option" project="ZMS.BLL.OA.IApprove" file="be622351-827d-c5d9-5b58-020517c873ea" />
+        <topic id="P:ZMS.BLL.OA.IApprove.AuditPostViewModel.uid" project="ZMS.BLL.OA.IApprove" file="0f0828dc-a63f-50bc-531e-d65e484ac4a8" />
+      </topic>
+    </topic>
+    <topic id="T:ZMS.BLL.OA.IApprove.AuditResult" project="ZMS.BLL.OA.IApprove" file="734416f3-1a46-b347-50c8-045469585c41" />
+    <topic id="T:ZMS.BLL.OA.IApprove.CancelResult" project="ZMS.BLL.OA.IApprove" file="c95fa3d5-ea47-bba7-06ac-f0fdd6c6e64d" />
+    <topic id="T:ZMS.BLL.OA.IApprove.CreateHelper" project="ZMS.BLL.OA.IApprove" file="ac697d2f-c400-530c-f510-bb853f423122">
+      <topic id="Methods.T:ZMS.BLL.OA.IApprove.CreateHelper" project="ZMS.BLL.OA.IApprove" file="a50ce3e6-cfb2-a30b-9b8d-578d76ad7ef3">
+        <topic id="M:ZMS.BLL.OA.IApprove.CreateHelper.ToTurnAndValidate(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.BLL.OA.IApprove.TurnAndValidResult@)" project="ZMS.BLL.OA.IApprove" file="ca30997d-c700-86ca-4bd8-f66f5b4ec0e4" />
+        <topic id="M:ZMS.BLL.OA.IApprove.CreateHelper.Turn(ZMS.BLL.OA.IApprove.CreatePostViewModel,ZMS.OA.Model.oa_ApproveInfo@)" project="ZMS.BLL.OA.IApprove" file="9d020154-83fb-2d7a-9a29-44a229825a36" />
+      </topic>
+    </topic>
+    <topic id="T:ZMS.BLL.OA.IApprove.CreatePostViewModel" project="ZMS.BLL.OA.IApprove" file="3f83befc-9c1c-7cfa-89c9-2a15d119e833">
+      <topic id="M:ZMS.BLL.OA.IApprove.CreatePostViewModel.#ctor" project="ZMS.BLL.OA.IApprove" file="fb2637e3-f17e-1d4b-40f8-be1d564b24a3" />
+      <topic id="Methods.T:ZMS.BLL.OA.IApprove.CreatePostViewModel" project="ZMS.BLL.OA.IApprove" file="eb915faa-62e3-1ed9-7403-75e4c06ece0a" />
+      <topic id="Properties.T:ZMS.BLL.OA.IApprove.CreatePostViewModel" project="ZMS.BLL.OA.IApprove" file="ba357b6d-3fde-63d3-6238-938baeb98b4d">
+        <topic id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.AttachmentID" project="ZMS.BLL.OA.IApprove" file="294baf97-eb54-490e-0218-955d86e157ef" />
+        <topic id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.DepartmentID" project="ZMS.BLL.OA.IApprove" file="8e36b12f-3418-e2c3-3773-9b5b4d614983" />
+        <topic id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.DepartmentName" project="ZMS.BLL.OA.IApprove" file="5554fcf1-e850-98ba-f4c3-9c9feebeec11" />
+        <topic id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.JsonContent" project="ZMS.BLL.OA.IApprove" file="6adfa231-ca92-b0d6-357e-3517b4e88653" />
+        <topic id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Notices" project="ZMS.BLL.OA.IApprove" file="12ca448c-b6fc-7f7b-9f57-af04bf2d0d82" />
+        <topic id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.PositionID" project="ZMS.BLL.OA.IApprove" file="55e60162-3357-56eb-b974-c67c8b7f6b98" />
+        <topic id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.PositionName" project="ZMS.BLL.OA.IApprove" file="22a4c083-1a19-da45-b395-c2e5240c572a" />
+        <topic id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Title" project="ZMS.BLL.OA.IApprove" file="7100f8c2-9124-604c-096a-fd58482e3f9c" />
+        <topic id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.ToUid" project="ZMS.BLL.OA.IApprove" file="6750c5cd-6164-ed1f-8886-ec20edaca7fb" />
+        <topic id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.ToUserName" project="ZMS.BLL.OA.IApprove" file="126ccf7e-5d60-7891-3aa4-766a59cb14d1" />
+        <topic id="P:ZMS.BLL.OA.IApprove.CreatePostViewModel.Type" project="ZMS.BLL.OA.IApprove" file="2e886ce7-c510-aefe-be89-48ae8a928e96" />
+      </topic>
+    </topic>
+    <topic id="T:ZMS.BLL.OA.IApprove.CreateResult" project="ZMS.BLL.OA.IApprove" file="be5a1238-858c-82da-d6b9-50c521f7b0bc" />
+    <topic id="T:ZMS.BLL.OA.IApprove.DeleteResult" project="ZMS.BLL.OA.IApprove" file="399aa61b-9a9d-b952-6ba9-db8da7770d2e" />
+    <topic id="T:ZMS.BLL.OA.IApprove.FromBase" project="ZMS.BLL.OA.IApprove" file="56ea043e-8e0c-323f-50cd-28daacc426f9">
+      <topic id="M:ZMS.BLL.OA.IApprove.FromBase.#ctor" project="ZMS.BLL.OA.IApprove" file="d01eee3b-676a-232b-b003-09d8d07625e5" />
+      <topic id="Methods.T:ZMS.BLL.OA.IApprove.FromBase" project="ZMS.BLL.OA.IApprove" file="1c62a654-04fc-1335-c65a-12272def34ca">
+        <topic id="M:ZMS.BLL.OA.IApprove.FromBase.IsValid" project="ZMS.BLL.OA.IApprove" file="226ffb65-24cb-11d7-3e37-a03fd399b776" />
+        <topic id="M:ZMS.BLL.OA.IApprove.FromBase.Validate(System.ComponentModel.DataAnnotations.ValidationContext)" project="ZMS.BLL.OA.IApprove" file="2253dab3-7964-a233-d5c4-6ae075012f47" />
+      </topic>
+    </topic>
+    <topic id="T:ZMS.BLL.OA.IApprove.GoodsApply" project="ZMS.BLL.OA.IApprove" file="423f5f6e-6e27-ea45-18dd-a4a458793dd5">
+      <topic id="M:ZMS.BLL.OA.IApprove.GoodsApply.#ctor" project="ZMS.BLL.OA.IApprove" file="23b9fdcf-be1c-9d09-eabc-0b0f6fb81811" />
+      <topic id="Methods.T:ZMS.BLL.OA.IApprove.GoodsApply" project="ZMS.BLL.OA.IApprove" file="97fa9608-c26f-7f84-16d9-a973f6ec0dce" />
+      <topic id="Properties.T:ZMS.BLL.OA.IApprove.GoodsApply" project="ZMS.BLL.OA.IApprove" file="40f30ba8-286b-66d1-ff2b-78d7e92939a6">
+        <topic id="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsName" project="ZMS.BLL.OA.IApprove" file="798ec833-2b8b-c1d3-73bf-bd9ec5e68f8f" />
+        <topic id="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsNum" project="ZMS.BLL.OA.IApprove" file="29b9d271-13c4-a3d5-bf85-6cc7cb340760" />
+        <topic id="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsType" project="ZMS.BLL.OA.IApprove" file="15bc7719-569a-5a74-894d-3c997958ddca" />
+        <topic id="P:ZMS.BLL.OA.IApprove.GoodsApply.GoodsUnit" project="ZMS.BLL.OA.IApprove" file="eb1ae641-6107-9372-1216-3f8b525893a7" />
+      </topic>
+    </topic>
+    <topic id="T:ZMS.BLL.OA.IApprove.GoodsApplyForm" project="ZMS.BLL.OA.IApprove" file="7a4286c7-d926-6abd-f1d6-4488494a3521">
+      <topic id="M:ZMS.BLL.OA.IApprove.GoodsApplyForm.#ctor" project="ZMS.BLL.OA.IApprove" file="7be34171-0b1e-47b4-d7a9-97a3eea93b67" />
+      <topic id="Methods.T:ZMS.BLL.OA.IApprove.GoodsApplyForm" project="ZMS.BLL.OA.IApprove" file="7e10a2da-61c6-854d-b1a9-1e0c31f04858">
+        <topic id="M:ZMS.BLL.OA.IApprove.GoodsApplyForm.IsCheck" project="ZMS.BLL.OA.IApprove" file="3b323601-f34a-58f2-e9f5-39834412fb1d" />
+        <topic id="M:ZMS.BLL.OA.IApprove.GoodsApplyForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)" project="ZMS.BLL.OA.IApprove" file="342665b7-b601-4376-877a-044207b49b31" />
+      </topic>
+      <topic id="Properties.T:ZMS.BLL.OA.IApprove.GoodsApplyForm" project="ZMS.BLL.OA.IApprove" file="c3f75d60-f975-e332-6cca-96422ef09e3f">
+        <topic id="P:ZMS.BLL.OA.IApprove.GoodsApplyForm.List" project="ZMS.BLL.OA.IApprove" file="ff04a025-d986-4ee7-420c-497d9a932712" />
+        <topic id="P:ZMS.BLL.OA.IApprove.GoodsApplyForm.Total" project="ZMS.BLL.OA.IApprove" file="71edabeb-67c2-9a06-cd17-897d3f6580af" />
+      </topic>
+    </topic>
+    <topic id="T:ZMS.BLL.OA.IApprove.GoodsApplyTotal" project="ZMS.BLL.OA.IApprove" file="d9e8748e-9933-997d-a036-324ffe55bebd">
+      <topic id="M:ZMS.BLL.OA.IApprove.GoodsApplyTotal.#ctor" project="ZMS.BLL.OA.IApprove" file="a14444ec-7346-6862-88ca-efb9f0ca5286" />
+      <topic id="Methods.T:ZMS.BLL.OA.IApprove.GoodsApplyTotal" project="ZMS.BLL.OA.IApprove" file="85df7d63-7e72-a356-57a8-ca9f4729cdb1" />
+      <topic id="Properties.T:ZMS.BLL.OA.IApprove.GoodsApplyTotal" project="ZMS.BLL.OA.IApprove" file="4927de15-7c05-aa93-a465-3987eed41337">
+        <topic id="P:ZMS.BLL.OA.IApprove.GoodsApplyTotal.TotalNum" project="ZMS.BLL.OA.IApprove" file="210ba22e-c794-bf98-5def-0086fab19e6c" />
+      </topic>
+    </topic>
+    <topic id="T:ZMS.BLL.OA.IApprove.IApprove" project="ZMS.BLL.OA.IApprove" file="93e69690-81a7-6a21-a49f-8ed45518733a">
+      <topic id="Methods.T:ZMS.BLL.OA.IApprove.IApprove" project="ZMS.BLL.OA.IApprove" file="798d0ad1-b83c-d0fb-bd87-31919623c493">
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.Audit(ZMS.BLL.OA.IApprove.AuditPostViewModel,System.String,System.Int32,System.Int32)" project="ZMS.BLL.OA.IApprove" file="7685b0df-b6f4-b886-bafb-fef51bc587b2" />
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.Browse(System.Int32,System.Int32,System.String)" project="ZMS.BLL.OA.IApprove" file="b98d83a8-5704-5d64-c908-5873d7570cd8" />
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.Cancel(System.Int32,System.Int32,System.String)" project="ZMS.BLL.OA.IApprove" file="aeab9105-97ff-f88b-12e2-b9dbbff2caa9" />
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.CheckDepartment(System.Int32,System.Int32,System.Int32,System.String@,System.Int32,System.String@)" project="ZMS.BLL.OA.IApprove" file="34bbbe65-e027-4c70-2c95-ddcb927ade01" />
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.CheckToUser(System.Int32,System.Int32,System.String@)" project="ZMS.BLL.OA.IApprove" file="164cd121-9d90-34ad-c703-a86680d222ab" />
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.Create(ZMS.BLL.OA.IApprove.CreatePostViewModel,System.String,System.Int32,System.Int32)" project="ZMS.BLL.OA.IApprove" file="1c003594-1a19-bde2-1045-32332a133c19" />
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.Del(System.Int32)" project="ZMS.BLL.OA.IApprove" file="114de7f8-8c20-1702-5903-7076f7864274" />
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.DiscussLog(System.Int32,System.Boolean,System.Int32,System.String)" project="ZMS.BLL.OA.IApprove" file="590773a5-6086-7937-86e4-fab19f91eb98" />
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.getApproveList(ZMS.BLL.OA.IApprove.SearchTabType,ZMS.BLL.OA.IApprove.SearchRequest,System.Int32,System.Int32)" project="ZMS.BLL.OA.IApprove" file="bd544cd7-9da7-9dbc-20d8-358ec154698d" />
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.getFlowList(System.Int32)" project="ZMS.BLL.OA.IApprove" file="db9bcc9c-3d79-e9b3-fdb2-978a63e488ec" />
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.getSingle(System.Int32)" project="ZMS.BLL.OA.IApprove" file="3133d54e-bac5-82c1-92be-473e7a002b5a" />
+        <topic id="M:ZMS.BLL.OA.IApprove.IApprove.Notice(System.Int32,System.String)" project="ZMS.BLL.OA.IApprove" file="bc3f9328-df5e-f8a2-8f94-baebb1034a9d" />
+      </topic>
+    </topic>
+    <topic id="T:ZMS.BLL.OA.IApprove.LeaveForm" project="ZMS.BLL.OA.IApprove" file="2582c4de-a99a-7775-e163-6e5e4089048a">
+      <topic id="M:ZMS.BLL.OA.IApprove.LeaveForm.#ctor" project="ZMS.BLL.OA.IApprove" file="99fd2d7c-94d3-6907-8d1c-d5f1b69ec380" />
+      <topic id="Methods.T:ZMS.BLL.OA.IApprove.LeaveForm" project="ZMS.BLL.OA.IApprove" file="ef8937ec-59a5-1a79-8fcb-ea0e2c649563">
+        <topic id="M:ZMS.BLL.OA.IApprove.LeaveForm.Validate(System.ComponentModel.DataAnnotations.ValidationContext)" project="ZMS.BLL.OA.IApprove" file="4816e1f2-3c01-ba2b-ebb8-d80d3c198a97" />
+      </topic>
+      <topic id="Properties.T:ZMS.BLL.OA.IApprove.LeaveForm" project="ZMS.BLL.OA.IApprove" file="2838549f-01ab-9656-7fb4-5ffa00bce45d">
+        <topic id="P:ZMS.BLL.OA.IApprove.LeaveForm.LeavelType" project="ZMS.BLL.OA.IApprove" file="8c30794e-69ce-b69b-0051-a859eadaf20e" />
+        <topic id="P:ZMS.BLL.OA.IApprove.LeaveForm.Nums" project="ZMS.BLL.OA.IApprove" file="646ed154-ba3c-e55e-bd9f-0c4a98dd4c43" />
+        <topic id="P:ZMS.BLL.OA.IApprove.LeaveForm.Remark" project="ZMS.BLL.OA.IApprove" file="1128698a-29be-e99c-acce-17d9c1bee854" />
+        <topic id="P:ZMS.BLL.OA.IApprove.LeaveForm.StartTime" project="ZMS.BLL.OA.IApprove" file="26727fb8-b419-9d97-d4f3-daa3727ddc35" />
+        <topic id="P:ZMS.BLL.OA.IApprove.LeaveForm.StopTime" project="ZMS.BLL.OA.IApprove" file="6f069578-f9b9-03b5-f6f6-0e27ebe25122" />
+        <topic id="P:ZMS.BLL.OA.IApprove.LeaveForm.Unit" project="ZMS.BLL.OA.IApprove" file="ba39e86b-83df-38fc-90ec-ee78a7f9948d" />
+      </topic>
+    </topic>
+    <topic id="T:ZMS.BLL.OA.IApprove.LeavelType" project="ZMS.BLL.OA.IApprove" file="829e0924-fee3-35ff-5649-e1daecd2770f" />
+    <topic id="T:ZMS.BLL.OA.IApprove.OptionLog" project="ZMS.BLL.OA.IApprove" file="b04905c1-ba5a-b417-6865-dcb249bceb84">
+      <topic id="M:ZMS.BLL.OA.IApprove.OptionLog.#ctor" project="ZMS.BLL.OA.IApprove" file="475abca5-0edb-b818-66a9-1368d84e073e" />
+      <topic id="Methods.T:ZMS.BLL.OA.IApprove.OptionLog" project="ZMS.BLL.OA.IApprove" file="9e9ffc84-c387-2477-f00d-a1a4afbc3d8e" />
+      <topic id="Properties.T:ZMS.BLL.OA.IApprove.OptionLog" project="ZMS.BLL.OA.IApprove" file="37ac820c-0733-df38-08db-1c4d55cb99e3">
+        <topic id="P:ZMS.BLL.OA.IApprove.OptionLog.Content" project="ZMS.BLL.OA.IApprove" file="05bc9f86-4929-7f22-427f-5d2b4493cc44" />
+        <topic id="P:ZMS.BLL.OA.IApprove.OptionLog.OptionTime" project="ZMS.BLL.OA.IApprove" file="b0fd2115-ab87-0227-a7a5-1159445c50df" />
+        <topic id="P:ZMS.BLL.OA.IApprove.OptionLog.UserName" project="ZMS.BLL.OA.IApprove" file="20bb1dfb-0cbc-c9a9-b81f-e631a188453c" />
+      </topic>
+    </topic>
+    <topic id="T:ZMS.BLL.OA.IApprove.OptionType" project="ZMS.BLL.OA.IApprove" file="5e52e8f5-1c09-0537-2bfd-130b8bf9559d" />
+    <topic id="T:ZMS.BLL.OA.IApprove.SearchRequest" project="ZMS.BLL.OA.IApprove" file="469ca3ec-49b1-bbaa-2773-7ef5044cd530">
+      <topic id="M:ZMS.BLL.OA.IApprove.SearchRequest.#ctor" project="ZMS.BLL.OA.IApprove" file="bf9d4b94-31e2-ea1b-b95d-28fda87ca1c4" />
+      <topic id="Methods.T:ZMS.BLL.OA.IApprove.SearchRequest" project="ZMS.BLL.OA.IApprove" file="38c8337b-cd0a-4584-eba4-c279a54d0985" />
+      <topic id="Properties.T:ZMS.BLL.OA.IApprove.SearchRequest" project="ZMS.BLL.OA.IApprove" file="21777131-f0bd-0e66-b90b-0730e280015e">
+        <topic id="P:ZMS.BLL.OA.IApprove.SearchRequest.PageIndex" project="ZMS.BLL.OA.IApprove" file="de89256f-42cf-fbe3-5760-d0b52d584995" />
+        <topic id="P:ZMS.BLL.OA.IApprove.SearchRequest.PageSize" project="ZMS.BLL.OA.IApprove" file="e4d4f04a-e22f-8a23-a7a6-1c365c1e7cfb" />
+        <topic id="P:ZMS.BLL.OA.IApprove.SearchRequest.Title" project="ZMS.BLL.OA.IApprove" file="97812c7a-3d86-ad5c-125f-02c29f88d36b" />
+      </topic>
+    </topic>
+    <topic id="T:ZMS.BLL.OA.IApprove.SearchTabType" project="ZMS.BLL.OA.IApprove" file="3d6bf92c-b045-ef71-658f-50cc3c678bc1" />
+    <topic id="T:ZMS.BLL.OA.IApprove.TurnAndValidResult" project="ZMS.BLL.OA.IApprove" file="4865342f-3e2c-c0cf-13f1-616416adb9b1" />
+  </topic>
+</topics>
